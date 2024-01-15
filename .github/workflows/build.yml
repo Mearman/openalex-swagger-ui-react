@@ -20,9 +20,6 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
-env:
-  BASE_URL: /${{ github.repository_name }}/
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -31,6 +28,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Get Repository Name
+        id: repo_name
+        run: echo "REPOSITORY_NAME=$(echo ${GITHUB_REPOSITORY} | cut -d'/' -f2)" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build --base=${{ env.BASE_URL }}
+        run: npm run build --base=${{ env.REPOSITORY_NAME }}
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
