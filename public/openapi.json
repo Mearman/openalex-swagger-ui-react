@@ -7,7 +7,7 @@
       "url" : "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     "title" : "OpenAlex",
-    "version" : "0.0.4-3"
+    "version" : "0.0.6"
   },
   "externalDocs" : {
     "description" : "OpenAlex API",
@@ -50,15 +50,17 @@
         "description" : "Get lists of authors",
         "operationId" : "getAuthors",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filter"
         }, {
           "$ref" : "#/components/parameters/group_by_param"
         }, {
-          "$ref" : "#/components/parameters/group_by_underscore_param"
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
-        }, {
-          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/sample"
         }, {
@@ -358,15 +360,17 @@
         "description" : "",
         "operationId" : "getConcepts",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filter"
         }, {
           "$ref" : "#/components/parameters/group_by_param"
         }, {
-          "$ref" : "#/components/parameters/group_by_underscore_param"
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
-        }, {
-          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/sample"
         }, {
@@ -432,15 +436,17 @@
         "description" : "",
         "operationId" : "getFunders",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filter"
         }, {
           "$ref" : "#/components/parameters/group_by_param"
         }, {
-          "$ref" : "#/components/parameters/group_by_underscore_param"
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
-        }, {
-          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/sample"
         }, {
@@ -509,15 +515,17 @@
         "description" : "",
         "operationId" : "getInstitutions",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filter"
         }, {
           "$ref" : "#/components/parameters/group_by_param"
         }, {
-          "$ref" : "#/components/parameters/group_by_underscore_param"
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
-        }, {
-          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/sample"
         }, {
@@ -621,15 +629,17 @@
         "description" : "",
         "operationId" : "getPublishers",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filter"
         }, {
           "$ref" : "#/components/parameters/group_by_param"
         }, {
-          "$ref" : "#/components/parameters/group_by_underscore_param"
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
-        }, {
-          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/sample"
         }, {
@@ -766,13 +776,25 @@
         "description" : "",
         "operationId" : "getWorks",
         "parameters" : [ {
+          "$ref" : "#/components/parameters/api_key"
+        }, {
+          "$ref" : "#/components/parameters/cursor"
+        }, {
           "$ref" : "#/components/parameters/filterWorks"
         }, {
-          "$ref" : "#/components/parameters/api_key"
+          "$ref" : "#/components/parameters/group_by_param"
+        }, {
+          "$ref" : "#/components/parameters/page_param"
         }, {
           "$ref" : "#/components/parameters/per_page"
         }, {
-          "$ref" : "#/components/parameters/cursor"
+          "$ref" : "#/components/parameters/sample"
+        }, {
+          "$ref" : "#/components/parameters/search"
+        }, {
+          "$ref" : "#/components/parameters/select"
+        }, {
+          "$ref" : "#/components/parameters/sort"
         }, {
           "$ref" : "#/components/parameters/mailtoHeader"
         }, {
@@ -783,7 +805,7 @@
             "$ref" : "#/components/responses/works"
           },
           "403" : {
-            "$ref" : "#/components/responses/resp4xx"
+            "$ref" : "#/components/responses/resp403"
           },
           "default" : {
             "$ref" : "#/components/responses/resp4xx"
@@ -1566,16 +1588,6 @@
       "group_by_param" : {
         "explode" : true,
         "in" : "query",
-        "name" : "group-by",
-        "required" : false,
-        "schema" : {
-          "type" : "string"
-        },
-        "style" : "form"
-      },
-      "group_by_underscore_param" : {
-        "explode" : true,
-        "in" : "query",
         "name" : "group_by",
         "required" : false,
         "schema" : {
@@ -1606,19 +1618,24 @@
         "style" : "form"
       },
       "page_param" : {
+        "examples" : {
+          "page" : {
+            "value" : 1
+          }
+        },
         "explode" : true,
         "in" : "query",
         "name" : "page",
         "required" : false,
         "schema" : {
-          "type" : "string"
+          "type" : "integer"
         },
         "style" : "form"
       },
       "per_page" : {
         "examples" : {
-          "1" : {
-            "value" : 1
+          "per_page" : {
+            "value" : 3
           }
         },
         "explode" : true,
