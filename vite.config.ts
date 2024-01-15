@@ -6,5 +6,8 @@ export default defineConfig({
 	plugins: [react()],
 	assetsInclude: [
 
-	]
+	],
+	build: {
+		copyPublicDir: true,
+	}
 });
