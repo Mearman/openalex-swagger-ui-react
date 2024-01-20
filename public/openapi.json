@@ -66,6 +66,8 @@
         }, {
           "$ref" : "#/components/parameters/search"
         }, {
+          "$ref" : "#/components/parameters/seed"
+        }, {
           "$ref" : "#/components/parameters/select"
         }, {
           "$ref" : "#/components/parameters/sort"
@@ -376,6 +378,8 @@
         }, {
           "$ref" : "#/components/parameters/search"
         }, {
+          "$ref" : "#/components/parameters/seed"
+        }, {
           "$ref" : "#/components/parameters/select"
         }, {
           "$ref" : "#/components/parameters/sort"
@@ -452,6 +456,8 @@
         }, {
           "$ref" : "#/components/parameters/search"
         }, {
+          "$ref" : "#/components/parameters/seed"
+        }, {
           "$ref" : "#/components/parameters/select"
         }, {
           "$ref" : "#/components/parameters/sort"
@@ -484,9 +490,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -531,6 +535,8 @@
         }, {
           "$ref" : "#/components/parameters/search"
         }, {
+          "$ref" : "#/components/parameters/seed"
+        }, {
           "$ref" : "#/components/parameters/select"
         }, {
           "$ref" : "#/components/parameters/sort"
@@ -563,9 +569,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -598,9 +602,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -645,6 +647,8 @@
         }, {
           "$ref" : "#/components/parameters/search"
         }, {
+          "$ref" : "#/components/parameters/seed"
+        }, {
           "$ref" : "#/components/parameters/select"
         }, {
           "$ref" : "#/components/parameters/sort"
@@ -677,9 +681,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -745,9 +747,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -858,9 +858,7 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : {
-            "type" : "string"
-          },
+          "schema" : { },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/mailtoHeader"
@@ -1580,8 +1578,7 @@
         "name" : "filter",
         "required" : false,
         "schema" : {
-          "pattern" : "^((abstract\\.search)|(apc_list\\.currency)|(apc_list\\.provenance)|(apc_list\\.value)|(apc_list\\.value_usd)|(apc_paid\\.currency)|(apc_paid\\.provenance)|(apc_paid\\.value)|(apc_paid\\.value_usd)|(author\\.id)|(author\\.orcid)|(authors_count)|(authorships\\.author\\.id)|(authorships\\.author\\.orcid)|(authorships\\.countries)|(authorships\\.institutions\\.continent)|(authorships\\.institutions\\.country_code)|(authorships\\.institutions\\.id)|(authorships\\.institutions\\.is_global_south)|(authorships\\.institutions\\.lineage)|(authorships\\.institutions\\.ror)|(authorships\\.institutions\\.type)|(authorships\\.is_corresponding)|(best_oa_location\\.is_accepted)|(best_oa_location\\.is_oa)|(best_oa_location\\.is_published)|(best_oa_location\\.landing_page_url)|(best_oa_location\\.license)|(best_oa_location\\.source\\.host_organization)|(best_oa_location\\.source\\.host_organization_lineage)|(best_oa_location\\.source\\.id)|(best_oa_location\\.source\\.is_in_doaj)|(best_oa_location\\.source\\.is_oa)|(best_oa_location\\.source\\.issn)|(best_oa_location\\.source\\.type)|(best_oa_location\\.version)|(best_open_version)|(cited_by)|(cited_by_count)|(cited_by_percentile_year\\.max)|(cited_by_percentile_year\\.min)|(cites)|(concept\\.id)|(concepts\\.id)|(concepts\\.wikidata)|(concepts_count)|(corresponding_author_ids)|(corresponding_institution_ids)|(countries_distinct_count)|(default\\.search)|(display_name)|(display_name\\.search)|(doi)|(doi_starts_with)|(from_created_date)|(from_publication_date)|(fulltext\\.search)|(fulltext_origin)|(grants\\.award_id)|(grants\\.funder)|(has_abstract)|(has_doi)|(has_fulltext)|(has_ngrams)|(has_oa_accepted_or_published_version)|(has_oa_submitted_version)|(has_old_authors)|(has_orcid)|(has_pdf_url)|(has_pmcid)|(has_pmid)|(has_raw_affiliation_string)|(has_references)|(host_venue\\.id)|(ids\\.mag)|(ids\\.openalex)|(ids\\.pmcid)|(ids\\.pmid)|(institution\\.id)|(institutions\\.continent)|(institutions\\.country_code)|(institutions\\.id)|(institutions\\.is_global_south)|(institutions\\.ror)|(institutions\\.type)|(institutions_distinct_count)|(is_corresponding)|(is_oa)|(is_paratext)|(is_retracted)|(journal)|(keyword\\.search)|(keywords\\.keyword)|(language)|(locations\\.is_accepted)|(locations\\.is_oa)|(locations\\.is_published)|(locations\\.landing_page_url)|(locations\\.license)|(locations\\.source\\.has_issn)|(locations\\.source\\.host_institution_lineage)|(locations\\.source\\.host_organization)|(locations\\.source\\.host_organization_lineage)|(locations\\.source\\.id)|(locations\\.source\\.is_in_doaj)|(locations\\.source\\.is_oa)|(locations\\.source\\.issn)|(locations\\.source\\.publisher_lineage)|(locations\\.source\\.type)|(locations\\.version)|(locations_count)|(mag)|(oa_status)|(open_access\\.any_repository_has_fulltext)|(open_access\\.is_oa)|(open_access\\.oa_status)|(openalex)|(openalex_id)|(pmcid)|(pmid)|(primary_location\\.is_accepted)|(primary_location\\.is_oa)|(primary_location\\.is_published)|(primary_location\\.landing_page_url)|(primary_location\\.license)|(primary_location\\.source\\.has_issn)|(primary_location\\.source\\.host_institution_lineage)|(primary_location\\.source\\.host_organization)|(primary_location\\.source\\.host_organization_lineage)|(primary_location\\.source\\.id)|(primary_location\\.source\\.is_in_doaj)|(primary_location\\.source\\.is_oa)|(primary_location\\.source\\.issn)|(primary_location\\.source\\.publisher_lineage)|(primary_location\\.source\\.type)|(primary_location\\.version)|(publication_date)|(publication_year)|(raw_affiliation_string\\.search)|(referenced_works)|(referenced_works_count)|(related_to)|(repository)|(sustainable_development_goals\\.id)|(sustainable_development_goals\\.score)|(title\\.search)|(title_and_abstract\\.search)|(to_publication_date)|(to_updated_date)|(type)|(type_crossref)|(version)):.+",
-          "type" : "string"
+          "pattern" : "^((abstract\\.search)|(apc_list\\.currency)|(apc_list\\.provenance)|(apc_list\\.value)|(apc_list\\.value_usd)|(apc_paid\\.currency)|(apc_paid\\.provenance)|(apc_paid\\.value)|(apc_paid\\.value_usd)|(author\\.id)|(author\\.orcid)|(authors_count)|(authorships\\.author\\.id)|(authorships\\.author\\.orcid)|(authorships\\.countries)|(authorships\\.institutions\\.continent)|(authorships\\.institutions\\.country_code)|(authorships\\.institutions\\.id)|(authorships\\.institutions\\.is_global_south)|(authorships\\.institutions\\.lineage)|(authorships\\.institutions\\.ror)|(authorships\\.institutions\\.type)|(authorships\\.is_corresponding)|(best_oa_location\\.is_accepted)|(best_oa_location\\.is_oa)|(best_oa_location\\.is_published)|(best_oa_location\\.landing_page_url)|(best_oa_location\\.license)|(best_oa_location\\.source\\.host_organization)|(best_oa_location\\.source\\.host_organization_lineage)|(best_oa_location\\.source\\.id)|(best_oa_location\\.source\\.is_in_doaj)|(best_oa_location\\.source\\.is_oa)|(best_oa_location\\.source\\.issn)|(best_oa_location\\.source\\.type)|(best_oa_location\\.version)|(best_open_version)|(cited_by)|(cited_by_count)|(cited_by_percentile_year\\.max)|(cited_by_percentile_year\\.min)|(cites)|(concept\\.id)|(concepts\\.id)|(concepts\\.wikidata)|(concepts_count)|(corresponding_author_ids)|(corresponding_institution_ids)|(countries_distinct_count)|(default\\.search)|(display_name)|(display_name\\.search)|(doi)|(doi_starts_with)|(from_created_date)|(from_publication_date)|(fulltext\\.search)|(fulltext_origin)|(grants\\.award_id)|(grants\\.funder)|(has_abstract)|(has_doi)|(has_fulltext)|(has_ngrams)|(has_oa_accepted_or_published_version)|(has_oa_submitted_version)|(has_old_authors)|(has_orcid)|(has_pdf_url)|(has_pmcid)|(has_pmid)|(has_raw_affiliation_string)|(has_references)|(host_venue\\.id)|(ids\\.mag)|(ids\\.openalex)|(ids\\.pmcid)|(ids\\.pmid)|(institution\\.id)|(institutions\\.continent)|(institutions\\.country_code)|(institutions\\.id)|(institutions\\.is_global_south)|(institutions\\.ror)|(institutions\\.type)|(institutions_distinct_count)|(is_corresponding)|(is_oa)|(is_paratext)|(is_retracted)|(journal)|(keyword\\.search)|(keywords\\.keyword)|(language)|(locations\\.is_accepted)|(locations\\.is_oa)|(locations\\.is_published)|(locations\\.landing_page_url)|(locations\\.license)|(locations\\.source\\.has_issn)|(locations\\.source\\.host_institution_lineage)|(locations\\.source\\.host_organization)|(locations\\.source\\.host_organization_lineage)|(locations\\.source\\.id)|(locations\\.source\\.is_in_doaj)|(locations\\.source\\.is_oa)|(locations\\.source\\.issn)|(locations\\.source\\.publisher_lineage)|(locations\\.source\\.type)|(locations\\.version)|(locations_count)|(mag)|(oa_status)|(open_access\\.any_repository_has_fulltext)|(open_access\\.is_oa)|(open_access\\.oa_status)|(openalex)|(openalex_id)|(pmcid)|(pmid)|(primary_location\\.is_accepted)|(primary_location\\.is_oa)|(primary_location\\.is_published)|(primary_location\\.landing_page_url)|(primary_location\\.license)|(primary_location\\.source\\.has_issn)|(primary_location\\.source\\.host_institution_lineage)|(primary_location\\.source\\.host_organization)|(primary_location\\.source\\.host_organization_lineage)|(primary_location\\.source\\.id)|(primary_location\\.source\\.is_in_doaj)|(primary_location\\.source\\.is_oa)|(primary_location\\.source\\.issn)|(primary_location\\.source\\.publisher_lineage)|(primary_location\\.source\\.type)|(primary_location\\.version)|(publication_date)|(publication_year)|(raw_affiliation_string\\.search)|(referenced_works)|(referenced_works_count)|(related_to)|(repository)|(sustainable_development_goals\\.id)|(sustainable_development_goals\\.score)|(title\\.search)|(title_and_abstract\\.search)|(to_publication_date)|(to_updated_date)|(type)|(type_crossref)|(version)):.+"
         },
         "style" : "form"
       },
@@ -1667,6 +1664,14 @@
         },
         "style" : "form"
       },
+      "seed" : {
+        "explode" : true,
+        "in" : "query",
+        "name" : "seed",
+        "required" : false,
+        "schema" : { },
+        "style" : "form"
+      },
       "select" : {
         "explode" : true,
         "in" : "query",
@@ -1699,8 +1704,7 @@
             }, {
               "$ref" : "#/components/schemas/baseSelectionAttributes"
             } ]
-          },
-          "type" : "array"
+          }
         },
         "style" : "form"
       },
@@ -1961,25 +1965,24 @@
     "schemas" : {
       "affiliations" : {
         "items" : {
-          "$ref" : "#/components/schemas/affiliations_inner"
-        },
-        "type" : "array"
+          "properties" : {
+            "institution" : {
+              "$ref" : "#/components/schemas/dehydratedInstitution"
+            },
+            "years" : {
+              "items" : { }
+            }
+          },
+          "required" : [ "institution", "years" ]
+        }
       },
       "apc" : {
         "additionalProperties" : false,
         "properties" : {
-          "currency" : {
-            "type" : "string"
-          },
-          "provenance" : {
-            "type" : "string"
-          },
-          "value" : {
-            "type" : "integer"
-          },
-          "value_usd" : {
-            "type" : "integer"
-          }
+          "currency" : { },
+          "provenance" : { },
+          "value" : { },
+          "value_usd" : { }
         },
         "required" : [ "currency", "provenance", "value", "value_usd" ]
       },
@@ -1988,9 +1991,7 @@
         "items" : {
           "additionalProperties" : false,
           "properties" : {
-            "currency" : {
-              "type" : "string"
-            },
+            "currency" : { },
             "price" : { }
           },
           "required" : [ "currency", "price" ]
@@ -2864,9 +2865,7 @@
           "required" : [ "display_name", "host_organization", "host_organization_lineage", "host_organization_name", "id" ]
         }
       },
-      "resp4xxResponseSchema" : {
-        "type" : "string"
-      },
+      "resp4xxResponseSchema" : { },
       "role" : {
         "additionalProperties" : false,
         "properties" : {
@@ -3118,20 +3117,6 @@
           }
         },
         "required" : [ "meta", "results" ]
-      },
-      "affiliations_inner" : {
-        "properties" : {
-          "institution" : {
-            "$ref" : "#/components/schemas/dehydratedInstitution"
-          },
-          "years" : {
-            "items" : {
-              "type" : "integer"
-            },
-            "type" : "array"
-          }
-        },
-        "required" : [ "institution", "years" ]
       },
       "concept_ids" : {
         "properties" : {
