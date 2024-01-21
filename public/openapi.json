@@ -1698,13 +1698,7 @@
         "name" : "select",
         "required" : false,
         "schema" : {
-          "items" : {
-            "allOf" : [ {
-              "$ref" : "#/components/schemas/workAttributes"
-            }, {
-              "$ref" : "#/components/schemas/baseSelectionAttributes"
-            } ]
-          }
+          "$ref" : "#/components/schemas/workSelectSchema"
         },
         "style" : "form"
       },
@@ -3101,6 +3095,15 @@
           "updated_date" : { }
         },
         "required" : [ "display_name", "id" ]
+      },
+      "workSelectSchema" : {
+        "items" : {
+          "anyOf" : [ {
+            "$ref" : "#/components/schemas/workAttributes"
+          }, {
+            "$ref" : "#/components/schemas/baseSelectionAttributes"
+          } ]
+        }
       },
       "worksResponseSchema" : {
         "properties" : {
