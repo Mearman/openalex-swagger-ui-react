@@ -3098,7 +3098,7 @@
       },
       "workSelectSchema" : {
         "items" : {
-          "anyOf" : [ {
+          "allOf" : [ {
             "$ref" : "#/components/schemas/workAttributes"
           }, {
             "$ref" : "#/components/schemas/baseSelectionAttributes"
