@@ -93,7 +93,7 @@
     },
     "/authors/random" : {
       "get" : {
-        "description" : "Get a single author by id",
+        "description" : "Get a random author",
         "operationId" : "getRandomAuthor",
         "parameters" : [ {
           "$ref" : "#/components/parameters/select"
@@ -114,7 +114,7 @@
           }
         },
         "summary" : "Get Random Author",
-        "tags" : [ "authors" ]
+        "tags" : [ "authors", "single", "random" ]
       }
     },
     "/authors/{id}" : {
@@ -142,7 +142,7 @@
           }
         },
         "summary" : "Get Author",
-        "tags" : [ "authors" ]
+        "tags" : [ "authors", "single" ]
       }
     },
     "/autocomplete" : {
@@ -426,7 +426,7 @@
           }
         },
         "summary" : "/concepts/random",
-        "tags" : [ "concepts" ]
+        "tags" : [ "concepts", "single", "random" ]
       }
     },
     "/concepts/{id}" : {
@@ -458,7 +458,7 @@
           }
         },
         "summary" : "/concepts/{id}",
-        "tags" : [ "concepts" ]
+        "tags" : [ "concepts", "single" ]
       }
     },
     "/funders" : {
@@ -530,7 +530,7 @@
           }
         },
         "summary" : "/funders/random",
-        "tags" : [ "funders" ]
+        "tags" : [ "funders", "single", "random" ]
       }
     },
     "/funders/{id}" : {
@@ -563,7 +563,7 @@
           }
         },
         "summary" : "/funders/{id}",
-        "tags" : [ "funders" ]
+        "tags" : [ "funders", "single" ]
       }
     },
     "/institutions" : {
@@ -635,7 +635,7 @@
           }
         },
         "summary" : "/institutions/random",
-        "tags" : [ "institutions" ]
+        "tags" : [ "institutions", "single", "random" ]
       }
     },
     "/institutions/{id}" : {
@@ -668,7 +668,7 @@
           }
         },
         "summary" : "/institutions/{id}",
-        "tags" : [ "institutions" ]
+        "tags" : [ "institutions", "single" ]
       }
     },
     "/people/{id}" : {
@@ -773,7 +773,7 @@
           }
         },
         "summary" : "/publishers/random",
-        "tags" : [ "publishers" ]
+        "tags" : [ "publishers", "single", "random" ]
       }
     },
     "/publishers/{id}" : {
@@ -806,7 +806,7 @@
           }
         },
         "summary" : "/publishers/{id}",
-        "tags" : [ "publishers" ]
+        "tags" : [ "publishers", "single" ]
       }
     },
     "/sources" : {
@@ -865,7 +865,7 @@
           }
         },
         "summary" : "/sources/random",
-        "tags" : [ "sources" ]
+        "tags" : [ "sources", "single", "random" ]
       }
     },
     "/sources/{id}" : {
@@ -898,7 +898,7 @@
           }
         },
         "summary" : "/sources/{id}",
-        "tags" : [ "sources" ]
+        "tags" : [ "sources", "single" ]
       }
     },
     "/works" : {
@@ -970,7 +970,7 @@
           }
         },
         "summary" : "/works/random",
-        "tags" : [ "works", "random" ]
+        "tags" : [ "works", "single", "random" ]
       }
     },
     "/works/{id}" : {
