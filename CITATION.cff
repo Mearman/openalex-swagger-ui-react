@@ -1,0 +1,12 @@
+authors:
+  - affiliation: "@BangorUniversity"
+    family-names: Joseph Mearman
+cff-version: 1.2.0
+date-released: "2024-04-15"
+doi: 10.5281/zenodo.10975791
+license:
+  - cc-by-4.0
+repository-code: https://github.com/Mearman/openalex-swagger-ui-react/tree/v1.0.0
+title: "Mearman/openalex-swagger-ui-react: v1.0.0"
+type: software
+version: v1.0.0
