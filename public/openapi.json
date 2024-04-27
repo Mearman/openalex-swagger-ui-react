@@ -2163,7 +2163,6 @@
         }
       },
       "author" : {
-        "additionalProperties" : false,
         "properties" : {
           "affiliations" : {
             "$ref" : "#/components/schemas/affiliations"
@@ -2253,7 +2252,7 @@
             },
             "raw_author_name" : { }
           },
-          "required" : [ "author", "author_position", "countries", "institutions", "is_corresponding", "raw_affiliation_string", "raw_affiliation_strings", "raw_author_name" ]
+          "required" : [ "author", "author_position", "countries", "institutions", "is_corresponding", "raw_affiliation_strings", "raw_author_name" ]
         }
       },
       "autoCompleteResultItem" : {
@@ -2533,7 +2532,6 @@
         }
       },
       "institutionSchema" : {
-        "additionalProperties" : false,
         "properties" : {
           "associated_institutions" : {
             "$ref" : "#/components/schemas/associatedInstitutionArray"
@@ -3045,7 +3043,6 @@
         "required" : [ "documentation_url", "msg", "version" ]
       },
       "sourceSchema" : {
-        "additionalProperties" : false,
         "properties" : {
           "abbreviated_title" : { },
           "alternate_titles" : {
@@ -3199,10 +3196,13 @@
           "keywords" : {
             "items" : {
               "properties" : {
-                "keyword" : { },
+                "display_name" : { },
+                "id" : {
+                  "format" : "url"
+                },
                 "score" : { }
               },
-              "required" : [ "keyword", "score" ]
+              "required" : [ "display_name", "id", "score" ]
             }
           },
           "language" : { },
