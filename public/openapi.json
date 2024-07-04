@@ -7,7 +7,7 @@
       "url" : "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     "title" : "OpenAlex",
-    "version" : "0.2.4"
+    "version" : "0.3.0"
   },
   "externalDocs" : {
     "description" : "OpenAlex API",
@@ -42,7 +42,7 @@
           }
         },
         "summary" : "Root",
-        "tags" : [ "OpenAlex", "info" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/authors" : {
@@ -88,7 +88,7 @@
           }
         },
         "summary" : "List Authors",
-        "tags" : [ "OpenAlex", "authors" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/authors/random" : {
@@ -114,7 +114,7 @@
           }
         },
         "summary" : "Get Random Author",
-        "tags" : [ "OpenAlex", "authors", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/authors/{id}" : {
@@ -142,7 +142,7 @@
           }
         },
         "summary" : "Get Author",
-        "tags" : [ "OpenAlex", "authors", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete" : {
@@ -168,7 +168,7 @@
           }
         },
         "summary" : "/autocomplete",
-        "tags" : [ "OpenAlex", "autocomplete" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/authors" : {
@@ -194,7 +194,7 @@
           }
         },
         "summary" : "/autocomplete/authors",
-        "tags" : [ "OpenAlex", "autocomplete", "authors" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/concepts" : {
@@ -220,7 +220,7 @@
           }
         },
         "summary" : "/autocomplete/concepts",
-        "tags" : [ "OpenAlex", "autocomplete", "concepts" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/funders" : {
@@ -246,7 +246,7 @@
           }
         },
         "summary" : "/autocomplete/funders",
-        "tags" : [ "OpenAlex", "autocomplete", "funders" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/institutions" : {
@@ -272,7 +272,7 @@
           }
         },
         "summary" : "/autocomplete/institutions",
-        "tags" : [ "OpenAlex", "autocomplete", "institutions" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/publishers" : {
@@ -298,7 +298,7 @@
           }
         },
         "summary" : "/autocomplete/publishers",
-        "tags" : [ "OpenAlex", "autocomplete", "publishers" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/sources" : {
@@ -324,7 +324,7 @@
           }
         },
         "summary" : "/autocomplete/sources",
-        "tags" : [ "OpenAlex", "autocomplete", "sources" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/autocomplete/works" : {
@@ -354,7 +354,7 @@
           }
         },
         "summary" : "/autocomplete/works",
-        "tags" : [ "OpenAlex", "autocomplete", "works" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/concepts" : {
@@ -400,7 +400,7 @@
           }
         },
         "summary" : "/concepts",
-        "tags" : [ "OpenAlex", "concepts", "multiple" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/concepts/random" : {
@@ -426,7 +426,7 @@
           }
         },
         "summary" : "/concepts/random",
-        "tags" : [ "OpenAlex", "concepts", "random", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/concepts/{id}" : {
@@ -458,7 +458,7 @@
           }
         },
         "summary" : "/concepts/{id}",
-        "tags" : [ "OpenAlex", "concepts", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/domains/{id}" : {
@@ -491,7 +491,7 @@
         },
         "security" : [ ],
         "summary" : "/domains/{id}",
-        "tags" : [ "OpenAlex", "topics", "multiple" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/field/{id}" : {
@@ -520,7 +520,7 @@
         },
         "security" : [ ],
         "summary" : "/fields/{id}",
-        "tags" : [ "OpenAlex", "topics", "multiple" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/funders" : {
@@ -566,7 +566,7 @@
           }
         },
         "summary" : "/funders",
-        "tags" : [ "OpenAlex", "funders" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/funders/random" : {
@@ -592,7 +592,7 @@
           }
         },
         "summary" : "/funders/random",
-        "tags" : [ "OpenAlex", "funders", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/funders/{id}" : {
@@ -604,7 +604,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -625,7 +627,7 @@
           }
         },
         "summary" : "/funders/{id}",
-        "tags" : [ "OpenAlex", "funders", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/institutions" : {
@@ -671,7 +673,7 @@
           }
         },
         "summary" : "/institutions",
-        "tags" : [ "OpenAlex", "institutions" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/institutions/random" : {
@@ -697,7 +699,7 @@
           }
         },
         "summary" : "/institutions/random",
-        "tags" : [ "OpenAlex", "institutions", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/institutions/{id}" : {
@@ -709,7 +711,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -730,7 +734,7 @@
           }
         },
         "summary" : "/institutions/{id}",
-        "tags" : [ "OpenAlex", "institutions", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/people/{id}" : {
@@ -742,7 +746,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -763,7 +769,7 @@
           }
         },
         "summary" : "/people/{id}",
-        "tags" : [ "OpenAlex", "people" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/publishers" : {
@@ -809,7 +815,7 @@
           }
         },
         "summary" : "/publishers",
-        "tags" : [ "OpenAlex", "publishers" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/publishers/random" : {
@@ -835,7 +841,7 @@
           }
         },
         "summary" : "/publishers/random",
-        "tags" : [ "OpenAlex", "publishers", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/publishers/{id}" : {
@@ -847,7 +853,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -868,7 +876,7 @@
           }
         },
         "summary" : "/publishers/{id}",
-        "tags" : [ "OpenAlex", "publishers", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/sources" : {
@@ -901,7 +909,7 @@
           }
         },
         "summary" : "/sources",
-        "tags" : [ "OpenAlex", "sources" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/sources/random" : {
@@ -927,7 +935,7 @@
           }
         },
         "summary" : "/sources/random",
-        "tags" : [ "OpenAlex", "sources", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/sources/{id}" : {
@@ -939,7 +947,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/select"
@@ -960,7 +970,7 @@
           }
         },
         "summary" : "/sources/{id}",
-        "tags" : [ "OpenAlex", "sources", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/subfields/{id}" : {
@@ -989,7 +999,7 @@
         },
         "security" : [ ],
         "summary" : "/subfields/{id}",
-        "tags" : [ "OpenAlex", "topics", "multiple" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/topics" : {
@@ -1012,14 +1022,18 @@
           "in" : "query",
           "name" : "page",
           "required" : false,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "form"
         }, {
           "explode" : true,
           "in" : "query",
           "name" : "sample",
           "required" : false,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "form"
         }, {
           "explode" : true,
@@ -1075,7 +1089,7 @@
         },
         "security" : [ ],
         "summary" : "/topics",
-        "tags" : [ "OpenAlex", "topics", "multiple" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/topics/{id}" : {
@@ -1104,7 +1118,7 @@
         },
         "security" : [ ],
         "summary" : "/topics/{id}",
-        "tags" : [ "OpenAlex", "topics", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/works" : {
@@ -1150,7 +1164,7 @@
           }
         },
         "summary" : "/works",
-        "tags" : [ "OpenAlex", "works", "list" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/works/random" : {
@@ -1176,7 +1190,7 @@
           }
         },
         "summary" : "/works/random",
-        "tags" : [ "OpenAlex", "works", "single", "random" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/works/{id}" : {
@@ -1207,7 +1221,7 @@
           }
         },
         "summary" : "/works/{id}",
-        "tags" : [ "OpenAlex", "works", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     },
     "/works/{id}/ngrams" : {
@@ -1222,7 +1236,9 @@
           "in" : "path",
           "name" : "id",
           "required" : true,
-          "schema" : { },
+          "schema" : {
+            "type" : "string"
+          },
           "style" : "simple"
         }, {
           "$ref" : "#/components/parameters/mailtoHeader"
@@ -1241,7 +1257,7 @@
           }
         },
         "summary" : "/works/{id}/ngrams",
-        "tags" : [ "OpenAlex", "works", "ngrams", "single" ]
+        "tags" : [ "OpenAlex" ]
       }
     }
   },
@@ -1267,25 +1283,33 @@
       "Nel" : {
         "explode" : false,
         "required" : false,
-        "schema" : { },
+        "schema" : {
+          "type" : "string"
+        },
         "style" : "simple"
       },
       "Reporting-Endpoints" : {
         "explode" : false,
         "required" : false,
-        "schema" : { },
+        "schema" : {
+          "type" : "string"
+        },
         "style" : "simple"
       },
       "X-Api-Pool" : {
         "explode" : false,
         "required" : false,
-        "schema" : { },
+        "schema" : {
+          "type" : "string"
+        },
         "style" : "simple"
       },
       "X-Content-Type-Options" : {
         "explode" : false,
         "required" : false,
-        "schema" : { },
+        "schema" : {
+          "type" : "string"
+        },
         "style" : "simple"
       }
     },
@@ -1987,7 +2011,9 @@
         "in" : "path",
         "name" : "id",
         "required" : true,
-        "schema" : { },
+        "schema" : {
+          "type" : "string"
+        },
         "style" : "simple"
       },
       "mailtoHeader" : {
@@ -2096,7 +2122,14 @@
         "name" : "select",
         "required" : false,
         "schema" : {
-          "$ref" : "#/components/schemas/workSelectSchema"
+          "items" : {
+            "allOf" : [ {
+              "$ref" : "#/components/schemas/workAttributes"
+            }, {
+              "$ref" : "#/components/schemas/baseSelectionAttributes"
+            } ]
+          },
+          "type" : "array"
         },
         "style" : "form"
       },
@@ -2477,37 +2510,33 @@
     "schemas" : {
       "affiliations" : {
         "items" : {
-          "properties" : {
-            "institution" : {
-              "$ref" : "#/components/schemas/dehydratedInstitution"
-            },
-            "years" : {
-              "items" : { }
-            }
-          },
-          "required" : [ "institution", "years" ]
-        }
+          "$ref" : "#/components/schemas/affiliations_inner"
+        },
+        "type" : "array"
       },
       "apc" : {
         "additionalProperties" : false,
         "properties" : {
-          "currency" : { },
-          "provenance" : { },
-          "value" : { },
-          "value_usd" : { }
+          "currency" : {
+            "type" : "string"
+          },
+          "provenance" : {
+            "type" : "string"
+          },
+          "value" : {
+            "type" : "integer"
+          },
+          "value_usd" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "currency", "provenance", "value", "value_usd" ]
       },
       "apc_prices" : {
-        "additionalProperties" : { },
         "items" : {
-          "additionalProperties" : false,
-          "properties" : {
-            "currency" : { },
-            "price" : { }
-          },
-          "required" : [ "currency", "price" ]
-        }
+          "$ref" : "#/components/schemas/apc_prices_inner"
+        },
+        "type" : "array"
       },
       "associatedInstitution" : {
         "additionalProperties" : {
@@ -2520,23 +2549,35 @@
       "associatedInstitutionArray" : {
         "items" : {
           "$ref" : "#/components/schemas/associatedInstitution"
-        }
+        },
+        "type" : "array"
       },
       "author" : {
         "properties" : {
           "affiliations" : {
             "$ref" : "#/components/schemas/affiliations"
           },
-          "cited_by_count" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "display_name_alternatives" : {
-            "items" : { }
+          "created_date" : {
+            "type" : "string"
           },
-          "id" : { },
+          "display_name" : {
+            "type" : "string"
+          },
+          "display_name_alternatives" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
@@ -2546,13 +2587,21 @@
           "last_known_institutions" : {
             "$ref" : "#/components/schemas/dehydratedInstitutionArray"
           },
-          "orcid" : { },
+          "orcid" : {
+            "type" : "string"
+          },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
           "x_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           }
@@ -2570,61 +2619,44 @@
           "results" : {
             "items" : {
               "$ref" : "#/components/schemas/author"
-            }
+            },
+            "type" : "array"
           }
         },
         "required" : [ "group_by", "meta" ]
       },
       "authorships" : {
         "items" : {
-          "properties" : {
-            "author" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : { },
-                "orcid" : { }
-              },
-              "required" : [ "display_name", "id" ]
-            },
-            "author_position" : { },
-            "countries" : {
-              "items" : { }
-            },
-            "institutions" : {
-              "items" : {
-                "properties" : {
-                  "country_code" : { },
-                  "display_name" : { },
-                  "id" : { },
-                  "lineage" : {
-                    "items" : { }
-                  },
-                  "ror" : { },
-                  "type" : { }
-                },
-                "required" : [ "country_code", "display_name", "id", "lineage", "ror", "type" ]
-              }
-            },
-            "is_corresponding" : { },
-            "raw_affiliation_string" : { },
-            "raw_affiliation_strings" : {
-              "items" : { }
-            },
-            "raw_author_name" : { }
-          },
-          "required" : [ "author", "author_position", "countries", "institutions", "is_corresponding", "raw_affiliation_strings", "raw_author_name" ]
-        }
+          "$ref" : "#/components/schemas/authorships_inner"
+        },
+        "type" : "array"
       },
       "autoCompleteResultItem" : {
         "properties" : {
-          "cited_by_count" : { },
-          "display_name" : { },
-          "entity_type" : { },
-          "external_id" : { },
-          "filter_key" : { },
-          "hint" : { },
-          "id" : { },
-          "works_count" : { }
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "entity_type" : {
+            "type" : "string"
+          },
+          "external_id" : {
+            "type" : "string"
+          },
+          "filter_key" : {
+            "type" : "string"
+          },
+          "hint" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "cited_by_count", "display_name", "entity_type", "external_id", "filter_key", "hint", "id", "works_count" ]
       },
@@ -2636,13 +2668,15 @@
           "results" : {
             "items" : {
               "$ref" : "#/components/schemas/autoCompleteResultItem"
-            }
+            },
+            "type" : "array"
           }
         },
         "required" : [ "meta", "results" ]
       },
       "baseSelectionAttributes" : {
-        "enum" : [ "id", "display_name" ]
+        "enum" : [ "id", "display_name" ],
+        "type" : "string"
       },
       "concept" : {
         "additionalProperties" : false,
@@ -2650,43 +2684,69 @@
           "ancestors" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           },
-          "cited_by_count" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
-          "id" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/concept_ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
           "international" : {
             "$ref" : "#/components/schemas/international_display_name_and_description"
           },
-          "level" : { },
+          "level" : {
+            "type" : "integer"
+          },
           "related_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "wikidata" : { },
-          "works_api_url" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "wikidata" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "display_name", "id" ]
       },
       "conceptArray" : {
         "items" : {
           "$ref" : "#/components/schemas/concept"
-        }
+        },
+        "type" : "array"
       },
       "conceptIdPattern" : {
-        "pattern" : "^C[0-9]+$"
+        "pattern" : "^C[0-9]+$",
+        "type" : "string"
       },
       "concepts" : {
         "properties" : {
@@ -2703,92 +2763,149 @@
       },
       "countsByYear" : {
         "items" : {
-          "properties" : {
-            "cited_by_count" : { },
-            "works_count" : { },
-            "year" : { }
-          },
-          "required" : [ "cited_by_count", "year" ]
-        }
+          "$ref" : "#/components/schemas/countsByYear_inner"
+        },
+        "type" : "array"
       },
       "dehydratedConcept" : {
         "additionalProperties" : false,
         "properties" : {
-          "display_name" : { },
-          "id" : { },
-          "level" : { },
-          "score" : { },
-          "wikidata" : { }
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "level" : {
+            "type" : "integer"
+          },
+          "score" : {
+            "type" : "number"
+          },
+          "wikidata" : {
+            "type" : "string"
+          }
         },
         "required" : [ "display_name", "id" ]
       },
       "dehydratedConceptArray" : {
         "items" : {
           "$ref" : "#/components/schemas/dehydratedConcept"
-        }
+        },
+        "type" : "array"
       },
       "dehydratedInstitution" : {
         "properties" : {
-          "country_code" : { },
-          "display_name" : { },
-          "id" : { },
-          "lineage" : {
-            "items" : { }
+          "country_code" : {
+            "type" : "string"
           },
-          "ror" : { },
-          "type" : { }
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "lineage" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "ror" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
         }
       },
       "dehydratedInstitutionArray" : {
         "items" : {
           "$ref" : "#/components/schemas/dehydratedInstitution"
-        }
+        },
+        "type" : "array"
       },
       "domain" : {
         "properties" : {
-          "cited_by_count" : { },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "display_name_alternatives" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "fields" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
-          "id" : { },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
           "siblings" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "cited_by_count", "created_date", "description", "display_name", "display_name_alternatives", "fields", "id", "ids", "siblings", "updated_date", "works_api_url", "works_count" ]
       },
       "errorMessage" : {
         "properties" : {
-          "error" : { },
-          "message" : { }
+          "error" : {
+            "type" : "string"
+          },
+          "message" : {
+            "type" : "string"
+          }
         },
         "required" : [ "error", "message" ]
       },
       "field" : {
         "properties" : {
-          "cited_by_count" : { },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "display_name_alternatives" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "domain" : {
             "$ref" : "#/components/schemas/topicLevelSchema"
           },
-          "id" : { },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
@@ -2798,46 +2915,82 @@
           "subfields" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "cited_by_count", "created_date", "description", "display_name", "display_name_alternatives", "domain", "id", "ids", "siblings", "subfields", "updated_date", "works_api_url", "works_count" ]
       },
       "filterWorksSchema" : {
-        "pattern" : "^((abstract\\.search)|(apc_list\\.currency)|(apc_list\\.provenance)|(apc_list\\.value)|(apc_list\\.value_usd)|(apc_paid\\.currency)|(apc_paid\\.provenance)|(apc_paid\\.value)|(apc_paid\\.value_usd)|(author\\.id)|(author\\.orcid)|(authors_count)|(authorships\\.author\\.id)|(authorships\\.author\\.orcid)|(authorships\\.countries)|(authorships\\.institutions\\.continent)|(authorships\\.institutions\\.country_code)|(authorships\\.institutions\\.id)|(authorships\\.institutions\\.is_global_south)|(authorships\\.institutions\\.lineage)|(authorships\\.institutions\\.ror)|(authorships\\.institutions\\.type)|(authorships\\.is_corresponding)|(best_oa_location\\.is_accepted)|(best_oa_location\\.is_oa)|(best_oa_location\\.is_published)|(best_oa_location\\.landing_page_url)|(best_oa_location\\.license)|(best_oa_location\\.source\\.host_organization)|(best_oa_location\\.source\\.host_organization_lineage)|(best_oa_location\\.source\\.id)|(best_oa_location\\.source\\.is_in_doaj)|(best_oa_location\\.source\\.is_oa)|(best_oa_location\\.source\\.issn)|(best_oa_location\\.source\\.type)|(best_oa_location\\.version)|(best_open_version)|(cited_by)|(cited_by_count)|(cited_by_percentile_year\\.max)|(cited_by_percentile_year\\.min)|(cites)|(concept\\.id)|(concepts\\.id)|(concepts\\.wikidata)|(concepts_count)|(corresponding_author_ids)|(corresponding_institution_ids)|(countries_distinct_count)|(default\\.search)|(display_name)|(display_name\\.search)|(doi)|(doi_starts_with)|(from_created_date)|(from_publication_date)|(fulltext\\.search)|(fulltext_origin)|(grants\\.award_id)|(grants\\.funder)|(has_abstract)|(has_doi)|(has_fulltext)|(has_ngrams)|(has_oa_accepted_or_published_version)|(has_oa_submitted_version)|(has_old_authors)|(has_orcid)|(has_pdf_url)|(has_pmcid)|(has_pmid)|(has_raw_affiliation_string)|(has_references)|(host_venue\\.id)|(ids\\.mag)|(ids\\.openalex)|(ids\\.pmcid)|(ids\\.pmid)|(institution\\.id)|(institutions\\.continent)|(institutions\\.country_code)|(institutions\\.id)|(institutions\\.is_global_south)|(institutions\\.ror)|(institutions\\.type)|(institutions_distinct_count)|(is_corresponding)|(is_oa)|(is_paratext)|(is_retracted)|(journal)|(keyword\\.search)|(keywords\\.keyword)|(language)|(locations\\.is_accepted)|(locations\\.is_oa)|(locations\\.is_published)|(locations\\.landing_page_url)|(locations\\.license)|(locations\\.source\\.has_issn)|(locations\\.source\\.host_institution_lineage)|(locations\\.source\\.host_organization)|(locations\\.source\\.host_organization_lineage)|(locations\\.source\\.id)|(locations\\.source\\.is_in_doaj)|(locations\\.source\\.is_oa)|(locations\\.source\\.issn)|(locations\\.source\\.publisher_lineage)|(locations\\.source\\.type)|(locations\\.version)|(locations_count)|(mag)|(oa_status)|(open_access\\.any_repository_has_fulltext)|(open_access\\.is_oa)|(open_access\\.oa_status)|(openalex)|(openalex_id)|(pmcid)|(pmid)|(primary_location\\.is_accepted)|(primary_location\\.is_oa)|(primary_location\\.is_published)|(primary_location\\.landing_page_url)|(primary_location\\.license)|(primary_location\\.source\\.has_issn)|(primary_location\\.source\\.host_institution_lineage)|(primary_location\\.source\\.host_organization)|(primary_location\\.source\\.host_organization_lineage)|(primary_location\\.source\\.id)|(primary_location\\.source\\.is_in_doaj)|(primary_location\\.source\\.is_oa)|(primary_location\\.source\\.issn)|(primary_location\\.source\\.publisher_lineage)|(primary_location\\.source\\.type)|(primary_location\\.version)|(publication_date)|(publication_year)|(raw_affiliation_string\\.search)|(referenced_works)|(referenced_works_count)|(related_to)|(repository)|(sustainable_development_goals\\.id)|(sustainable_development_goals\\.score)|(title\\.search)|(title_and_abstract\\.search)|(to_publication_date)|(to_updated_date)|(type)|(type_crossref)|(version)):.+"
+        "pattern" : "^((abstract\\.search)|(apc_list\\.currency)|(apc_list\\.provenance)|(apc_list\\.value)|(apc_list\\.value_usd)|(apc_paid\\.currency)|(apc_paid\\.provenance)|(apc_paid\\.value)|(apc_paid\\.value_usd)|(author\\.id)|(author\\.orcid)|(authors_count)|(authorships\\.author\\.id)|(authorships\\.author\\.orcid)|(authorships\\.countries)|(authorships\\.institutions\\.continent)|(authorships\\.institutions\\.country_code)|(authorships\\.institutions\\.id)|(authorships\\.institutions\\.is_global_south)|(authorships\\.institutions\\.lineage)|(authorships\\.institutions\\.ror)|(authorships\\.institutions\\.type)|(authorships\\.is_corresponding)|(best_oa_location\\.is_accepted)|(best_oa_location\\.is_oa)|(best_oa_location\\.is_published)|(best_oa_location\\.landing_page_url)|(best_oa_location\\.license)|(best_oa_location\\.source\\.host_organization)|(best_oa_location\\.source\\.host_organization_lineage)|(best_oa_location\\.source\\.id)|(best_oa_location\\.source\\.is_in_doaj)|(best_oa_location\\.source\\.is_oa)|(best_oa_location\\.source\\.issn)|(best_oa_location\\.source\\.type)|(best_oa_location\\.version)|(best_open_version)|(cited_by)|(cited_by_count)|(cited_by_percentile_year\\.max)|(cited_by_percentile_year\\.min)|(cites)|(concept\\.id)|(concepts\\.id)|(concepts\\.wikidata)|(concepts_count)|(corresponding_author_ids)|(corresponding_institution_ids)|(countries_distinct_count)|(default\\.search)|(display_name)|(display_name\\.search)|(doi)|(doi_starts_with)|(from_created_date)|(from_publication_date)|(fulltext\\.search)|(fulltext_origin)|(grants\\.award_id)|(grants\\.funder)|(has_abstract)|(has_doi)|(has_fulltext)|(has_ngrams)|(has_oa_accepted_or_published_version)|(has_oa_submitted_version)|(has_old_authors)|(has_orcid)|(has_pdf_url)|(has_pmcid)|(has_pmid)|(has_raw_affiliation_string)|(has_references)|(host_venue\\.id)|(ids\\.mag)|(ids\\.openalex)|(ids\\.pmcid)|(ids\\.pmid)|(institution\\.id)|(institutions\\.continent)|(institutions\\.country_code)|(institutions\\.id)|(institutions\\.is_global_south)|(institutions\\.ror)|(institutions\\.type)|(institutions_distinct_count)|(is_corresponding)|(is_oa)|(is_paratext)|(is_retracted)|(journal)|(keyword\\.search)|(keywords\\.keyword)|(language)|(locations\\.is_accepted)|(locations\\.is_oa)|(locations\\.is_published)|(locations\\.landing_page_url)|(locations\\.license)|(locations\\.source\\.has_issn)|(locations\\.source\\.host_institution_lineage)|(locations\\.source\\.host_organization)|(locations\\.source\\.host_organization_lineage)|(locations\\.source\\.id)|(locations\\.source\\.is_in_doaj)|(locations\\.source\\.is_oa)|(locations\\.source\\.issn)|(locations\\.source\\.publisher_lineage)|(locations\\.source\\.type)|(locations\\.version)|(locations_count)|(mag)|(oa_status)|(open_access\\.any_repository_has_fulltext)|(open_access\\.is_oa)|(open_access\\.oa_status)|(openalex)|(openalex_id)|(pmcid)|(pmid)|(primary_location\\.is_accepted)|(primary_location\\.is_oa)|(primary_location\\.is_published)|(primary_location\\.landing_page_url)|(primary_location\\.license)|(primary_location\\.source\\.has_issn)|(primary_location\\.source\\.host_institution_lineage)|(primary_location\\.source\\.host_organization)|(primary_location\\.source\\.host_organization_lineage)|(primary_location\\.source\\.id)|(primary_location\\.source\\.is_in_doaj)|(primary_location\\.source\\.is_oa)|(primary_location\\.source\\.issn)|(primary_location\\.source\\.publisher_lineage)|(primary_location\\.source\\.type)|(primary_location\\.version)|(publication_date)|(publication_year)|(raw_affiliation_string\\.search)|(referenced_works)|(referenced_works_count)|(related_to)|(repository)|(sustainable_development_goals\\.id)|(sustainable_development_goals\\.score)|(title\\.search)|(title_and_abstract\\.search)|(to_publication_date)|(to_updated_date)|(type)|(type_crossref)|(version)):.+",
+        "type" : "string"
       },
       "funder" : {
         "additionalProperties" : false,
         "properties" : {
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
-          "grants_count" : { },
-          "homepage_url" : { },
-          "id" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "grants_count" : {
+            "type" : "integer"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
-          "relevance_score" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
+          "relevance_score" : {
+            "type" : "number"
+          },
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "alternate_titles", "display_name", "id" ]
       },
@@ -2845,33 +2998,62 @@
         "additionalProperties" : false,
         "properties" : {
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
-          "grants_count" : { },
-          "homepage_url" : { },
-          "id" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "grants_count" : {
+            "type" : "integer"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
-          "relevance_score" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
+          "relevance_score" : {
+            "type" : "number"
+          },
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "alternate_titles", "display_name", "id" ]
       },
@@ -2886,53 +3068,95 @@
           "results" : {
             "items" : {
               "$ref" : "#/components/schemas/funderSchema"
-            }
+            },
+            "type" : "array"
           }
         },
         "required" : [ "group_by", "meta" ]
       },
       "geo" : {
         "properties" : {
-          "city" : { },
-          "country" : { },
-          "country_code" : { },
-          "geonames_city_id" : { },
-          "latitude" : { },
-          "longitude" : { },
-          "region" : { }
+          "city" : {
+            "type" : "string"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
+          "geonames_city_id" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number"
+          },
+          "longitude" : {
+            "type" : "number"
+          },
+          "region" : {
+            "type" : "string"
+          }
         },
         "required" : [ "city", "country", "country_code", "geonames_city_id", "latitude", "longitude", "region" ]
       },
       "group_by_result" : {
         "items" : {
-          "properties" : {
-            "count" : { },
-            "key" : { },
-            "key_display_name" : { }
-          },
-          "required" : [ "count", "key", "key_display_name" ]
-        }
+          "$ref" : "#/components/schemas/group_by_result_inner"
+        },
+        "type" : "array"
       },
       "ids" : {
         "additionalProperties" : false,
         "properties" : {
-          "crossref" : { },
-          "doi" : { },
-          "fatcat" : { },
-          "grid" : { },
-          "issn" : {
-            "items" : { }
+          "crossref" : {
+            "type" : "string"
           },
-          "issn_l" : { },
-          "mag" : { },
-          "openalex" : { },
-          "orcid" : { },
-          "pmcid" : { },
-          "pmid" : { },
-          "ror" : { },
-          "scopus" : { },
-          "wikidata" : { },
-          "wikipedia" : { }
+          "doi" : {
+            "type" : "string"
+          },
+          "fatcat" : {
+            "type" : "string"
+          },
+          "grid" : {
+            "type" : "string"
+          },
+          "issn" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "issn_l" : {
+            "type" : "string"
+          },
+          "mag" : {
+            "type" : "string"
+          },
+          "openalex" : {
+            "type" : "string"
+          },
+          "orcid" : {
+            "type" : "string"
+          },
+          "pmcid" : {
+            "type" : "string"
+          },
+          "pmid" : {
+            "type" : "string"
+          },
+          "ror" : {
+            "type" : "string"
+          },
+          "scopus" : {
+            "type" : "string"
+          },
+          "wikidata" : {
+            "type" : "string"
+          },
+          "wikipedia" : {
+            "type" : "string"
+          }
         },
         "required" : [ "openalex" ]
       },
@@ -2941,34 +3165,59 @@
           "associated_institutions" : {
             "$ref" : "#/components/schemas/associatedInstitutionArray"
           },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "display_name_acronyms" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "display_name_alternatives" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "geo" : {
             "$ref" : "#/components/schemas/geo"
           },
-          "homepage_url" : { },
-          "id" : { },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
           "international" : {
             "$ref" : "#/components/schemas/international_display_name"
           },
           "lineage" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "repositories" : {
             "$ref" : "#/components/schemas/repositoriesArray"
@@ -2976,14 +3225,24 @@
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
-          "ror" : { },
+          "ror" : {
+            "type" : "string"
+          },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "type" : { },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { },
+          "type" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
           "x_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           }
@@ -2991,44 +3250,69 @@
         "required" : [ "display_name", "id" ]
       },
       "institutionArray" : {
-        "additionalProperties" : false,
         "items" : {
           "$ref" : "#/components/schemas/institutionSchema"
-        }
+        },
+        "type" : "array"
       },
       "institutionSchema" : {
         "properties" : {
           "associated_institutions" : {
             "$ref" : "#/components/schemas/associatedInstitutionArray"
           },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "display_name_acronyms" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "display_name_alternatives" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "geo" : {
             "$ref" : "#/components/schemas/geo"
           },
-          "homepage_url" : { },
-          "id" : { },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
           "international" : {
             "$ref" : "#/components/schemas/international_display_name"
           },
           "lineage" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "repositories" : {
             "$ref" : "#/components/schemas/repositoriesArray"
@@ -3036,14 +3320,24 @@
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
-          "ror" : { },
+          "ror" : {
+            "type" : "string"
+          },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "type" : { },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { },
+          "type" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
           "x_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           }
@@ -3090,317 +3384,871 @@
       },
       "internationalisation" : {
         "properties" : {
-          "ab" : { },
-          "ace" : { },
-          "aeb-arab" : { },
-          "af" : { },
-          "ak" : { },
-          "alt" : { },
-          "am" : { },
-          "an" : { },
-          "ang" : { },
-          "ar" : { },
-          "arc" : { },
-          "ary" : { },
-          "arz" : { },
-          "as" : { },
-          "ast" : { },
-          "atj" : { },
-          "ay" : { },
-          "az" : { },
-          "azb" : { },
-          "ba" : { },
-          "ban" : { },
-          "bar" : { },
-          "bcl" : { },
-          "be" : { },
-          "be-tarask" : { },
-          "bg" : { },
-          "bho" : { },
-          "bi" : { },
-          "bm" : { },
-          "bn" : { },
-          "bo" : { },
-          "bpy" : { },
-          "br" : { },
-          "bs" : { },
-          "bxr" : { },
-          "ca" : { },
-          "cbk-zam" : { },
-          "cdo" : { },
-          "ce" : { },
-          "ceb" : { },
-          "chr" : { },
-          "ckb" : { },
-          "co" : { },
-          "crh" : { },
-          "crh-latn" : { },
-          "cs" : { },
-          "csb" : { },
-          "cv" : { },
-          "cy" : { },
-          "da" : { },
-          "de" : { },
-          "de-at" : { },
-          "de-ch" : { },
-          "diq" : { },
-          "dv" : { },
-          "el" : { },
-          "eml" : { },
-          "en" : { },
-          "en-ca" : { },
-          "en-gb" : { },
-          "en-us" : { },
-          "eo" : { },
-          "es" : { },
-          "et" : { },
-          "eu" : { },
-          "ext" : { },
-          "fa" : { },
-          "fi" : { },
-          "fo" : { },
-          "fr" : { },
-          "frc" : { },
-          "frp" : { },
-          "frr" : { },
-          "fur" : { },
-          "fy" : { },
-          "ga" : { },
-          "gan" : { },
-          "gan-hans" : { },
-          "gan-hant" : { },
-          "gcr" : { },
-          "gd" : { },
-          "gl" : { },
-          "gn" : { },
-          "gpe" : { },
-          "gsw" : { },
-          "gu" : { },
-          "gv" : { },
-          "ha" : { },
-          "hak" : { },
-          "he" : { },
-          "hi" : { },
-          "hif" : { },
-          "hr" : { },
-          "hsb" : { },
-          "ht" : { },
-          "hu" : { },
-          "hy" : { },
-          "hyw" : { },
-          "ia" : { },
-          "id" : { },
-          "ie" : { },
-          "ig" : { },
-          "ilo" : { },
-          "inh" : { },
-          "io" : { },
-          "is" : { },
-          "it" : { },
-          "iu" : { },
-          "ja" : { },
-          "jam" : { },
-          "jv" : { },
-          "ka" : { },
-          "kaa" : { },
-          "kab" : { },
-          "kbp" : { },
-          "kg" : { },
-          "kk" : { },
-          "kk-arab" : { },
-          "kk-cn" : { },
-          "kk-cyrl" : { },
-          "kk-kz" : { },
-          "kk-latn" : { },
-          "kk-tr" : { },
-          "kl" : { },
-          "km" : { },
-          "kn" : { },
-          "ko" : { },
-          "ko-kp" : { },
-          "krc" : { },
-          "ks" : { },
-          "ksh" : { },
-          "ku" : { },
-          "ku-latn" : { },
-          "kw" : { },
-          "ky" : { },
-          "la" : { },
-          "lad" : { },
-          "lb" : { },
-          "lfn" : { },
-          "li" : { },
-          "lij" : { },
-          "lld" : { },
-          "lmo" : { },
-          "lo" : { },
-          "lt" : { },
-          "lv" : { },
-          "lzh" : { },
-          "mai" : { },
-          "mg" : { },
-          "min" : { },
-          "mk" : { },
-          "ml" : { },
-          "mn" : { },
-          "mni" : { },
-          "mr" : { },
-          "ms" : { },
-          "ms-arab" : { },
-          "mt" : { },
-          "mwl" : { },
-          "my" : { },
-          "mzn" : { },
-          "nah" : { },
-          "nan" : { },
-          "nap" : { },
-          "nb" : { },
-          "nds" : { },
-          "nds-nl" : { },
-          "ne" : { },
-          "new" : { },
-          "nia" : { },
-          "nl" : { },
-          "nn" : { },
-          "nov" : { },
-          "nqo" : { },
-          "nrm" : { },
-          "oc" : { },
-          "or" : { },
-          "os" : { },
-          "pa" : { },
-          "pam" : { },
-          "pap" : { },
-          "pcd" : { },
-          "pdc" : { },
-          "pih" : { },
-          "pl" : { },
-          "pms" : { },
-          "pnb" : { },
-          "ps" : { },
-          "pt" : { },
-          "pt-br" : { },
-          "qu" : { },
-          "rm" : { },
-          "ro" : { },
-          "ru" : { },
-          "rue" : { },
-          "rw" : { },
-          "sa" : { },
-          "sah" : { },
-          "sat" : { },
-          "sc" : { },
-          "scn" : { },
-          "sco" : { },
-          "sd" : { },
-          "se" : { },
-          "sgs" : { },
-          "sh" : { },
-          "shi" : { },
-          "si" : { },
-          "sk" : { },
-          "sl" : { },
-          "smn" : { },
-          "sms" : { },
-          "so" : { },
-          "sq" : { },
-          "sr" : { },
-          "sr-ec" : { },
-          "sr-el" : { },
-          "stq" : { },
-          "su" : { },
-          "sv" : { },
-          "sw" : { },
-          "syl" : { },
-          "szl" : { },
-          "ta" : { },
-          "te" : { },
-          "tg" : { },
-          "tg-latn" : { },
-          "th" : { },
-          "ti" : { },
-          "tk" : { },
-          "tl" : { },
-          "tr" : { },
-          "ts" : { },
-          "tt" : { },
-          "tt-cyrl" : { },
-          "tw" : { },
-          "ug" : { },
-          "uk" : { },
-          "ur" : { },
-          "uz" : { },
-          "vec" : { },
-          "vi" : { },
-          "vls" : { },
-          "vo" : { },
-          "vro" : { },
-          "wa" : { },
-          "war" : { },
-          "wo" : { },
-          "wuu" : { },
-          "xmf" : { },
-          "yi" : { },
-          "yo" : { },
-          "yue" : { },
-          "za" : { },
-          "zh" : { },
-          "zh-cn" : { },
-          "zh-hans" : { },
-          "zh-hant" : { },
-          "zh-hk" : { },
-          "zh-mo" : { },
-          "zh-my" : { },
-          "zh-sg" : { },
-          "zh-tw" : { },
-          "zu" : { }
+          "ab" : {
+            "type" : "string"
+          },
+          "ace" : {
+            "type" : "string"
+          },
+          "aeb-arab" : {
+            "type" : "string"
+          },
+          "af" : {
+            "type" : "string"
+          },
+          "ak" : {
+            "type" : "string"
+          },
+          "alt" : {
+            "type" : "string"
+          },
+          "am" : {
+            "type" : "string"
+          },
+          "an" : {
+            "type" : "string"
+          },
+          "ang" : {
+            "type" : "string"
+          },
+          "ar" : {
+            "type" : "string"
+          },
+          "arc" : {
+            "type" : "string"
+          },
+          "ary" : {
+            "type" : "string"
+          },
+          "arz" : {
+            "type" : "string"
+          },
+          "as" : {
+            "type" : "string"
+          },
+          "ast" : {
+            "type" : "string"
+          },
+          "atj" : {
+            "type" : "string"
+          },
+          "ay" : {
+            "type" : "string"
+          },
+          "az" : {
+            "type" : "string"
+          },
+          "azb" : {
+            "type" : "string"
+          },
+          "ba" : {
+            "type" : "string"
+          },
+          "ban" : {
+            "type" : "string"
+          },
+          "bar" : {
+            "type" : "string"
+          },
+          "bcl" : {
+            "type" : "string"
+          },
+          "be" : {
+            "type" : "string"
+          },
+          "be-tarask" : {
+            "type" : "string"
+          },
+          "bg" : {
+            "type" : "string"
+          },
+          "bho" : {
+            "type" : "string"
+          },
+          "bi" : {
+            "type" : "string"
+          },
+          "bm" : {
+            "type" : "string"
+          },
+          "bn" : {
+            "type" : "string"
+          },
+          "bo" : {
+            "type" : "string"
+          },
+          "bpy" : {
+            "type" : "string"
+          },
+          "br" : {
+            "type" : "string"
+          },
+          "bs" : {
+            "type" : "string"
+          },
+          "bxr" : {
+            "type" : "string"
+          },
+          "ca" : {
+            "type" : "string"
+          },
+          "cbk-zam" : {
+            "type" : "string"
+          },
+          "cdo" : {
+            "type" : "string"
+          },
+          "ce" : {
+            "type" : "string"
+          },
+          "ceb" : {
+            "type" : "string"
+          },
+          "chr" : {
+            "type" : "string"
+          },
+          "ckb" : {
+            "type" : "string"
+          },
+          "co" : {
+            "type" : "string"
+          },
+          "crh" : {
+            "type" : "string"
+          },
+          "crh-latn" : {
+            "type" : "string"
+          },
+          "cs" : {
+            "type" : "string"
+          },
+          "csb" : {
+            "type" : "string"
+          },
+          "cv" : {
+            "type" : "string"
+          },
+          "cy" : {
+            "type" : "string"
+          },
+          "da" : {
+            "type" : "string"
+          },
+          "de" : {
+            "type" : "string"
+          },
+          "de-at" : {
+            "type" : "string"
+          },
+          "de-ch" : {
+            "type" : "string"
+          },
+          "diq" : {
+            "type" : "string"
+          },
+          "dv" : {
+            "type" : "string"
+          },
+          "el" : {
+            "type" : "string"
+          },
+          "eml" : {
+            "type" : "string"
+          },
+          "en" : {
+            "type" : "string"
+          },
+          "en-ca" : {
+            "type" : "string"
+          },
+          "en-gb" : {
+            "type" : "string"
+          },
+          "en-us" : {
+            "type" : "string"
+          },
+          "eo" : {
+            "type" : "string"
+          },
+          "es" : {
+            "type" : "string"
+          },
+          "et" : {
+            "type" : "string"
+          },
+          "eu" : {
+            "type" : "string"
+          },
+          "ext" : {
+            "type" : "string"
+          },
+          "fa" : {
+            "type" : "string"
+          },
+          "fi" : {
+            "type" : "string"
+          },
+          "fo" : {
+            "type" : "string"
+          },
+          "fr" : {
+            "type" : "string"
+          },
+          "frc" : {
+            "type" : "string"
+          },
+          "frp" : {
+            "type" : "string"
+          },
+          "frr" : {
+            "type" : "string"
+          },
+          "fur" : {
+            "type" : "string"
+          },
+          "fy" : {
+            "type" : "string"
+          },
+          "ga" : {
+            "type" : "string"
+          },
+          "gan" : {
+            "type" : "string"
+          },
+          "gan-hans" : {
+            "type" : "string"
+          },
+          "gan-hant" : {
+            "type" : "string"
+          },
+          "gcr" : {
+            "type" : "string"
+          },
+          "gd" : {
+            "type" : "string"
+          },
+          "gl" : {
+            "type" : "string"
+          },
+          "gn" : {
+            "type" : "string"
+          },
+          "gpe" : {
+            "type" : "string"
+          },
+          "gsw" : {
+            "type" : "string"
+          },
+          "gu" : {
+            "type" : "string"
+          },
+          "gv" : {
+            "type" : "string"
+          },
+          "ha" : {
+            "type" : "string"
+          },
+          "hak" : {
+            "type" : "string"
+          },
+          "he" : {
+            "type" : "string"
+          },
+          "hi" : {
+            "type" : "string"
+          },
+          "hif" : {
+            "type" : "string"
+          },
+          "hr" : {
+            "type" : "string"
+          },
+          "hsb" : {
+            "type" : "string"
+          },
+          "ht" : {
+            "type" : "string"
+          },
+          "hu" : {
+            "type" : "string"
+          },
+          "hy" : {
+            "type" : "string"
+          },
+          "hyw" : {
+            "type" : "string"
+          },
+          "ia" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "ie" : {
+            "type" : "string"
+          },
+          "ig" : {
+            "type" : "string"
+          },
+          "ilo" : {
+            "type" : "string"
+          },
+          "inh" : {
+            "type" : "string"
+          },
+          "io" : {
+            "type" : "string"
+          },
+          "is" : {
+            "type" : "string"
+          },
+          "it" : {
+            "type" : "string"
+          },
+          "iu" : {
+            "type" : "string"
+          },
+          "ja" : {
+            "type" : "string"
+          },
+          "jam" : {
+            "type" : "string"
+          },
+          "jv" : {
+            "type" : "string"
+          },
+          "ka" : {
+            "type" : "string"
+          },
+          "kaa" : {
+            "type" : "string"
+          },
+          "kab" : {
+            "type" : "string"
+          },
+          "kbp" : {
+            "type" : "string"
+          },
+          "kg" : {
+            "type" : "string"
+          },
+          "kk" : {
+            "type" : "string"
+          },
+          "kk-arab" : {
+            "type" : "string"
+          },
+          "kk-cn" : {
+            "type" : "string"
+          },
+          "kk-cyrl" : {
+            "type" : "string"
+          },
+          "kk-kz" : {
+            "type" : "string"
+          },
+          "kk-latn" : {
+            "type" : "string"
+          },
+          "kk-tr" : {
+            "type" : "string"
+          },
+          "kl" : {
+            "type" : "string"
+          },
+          "km" : {
+            "type" : "string"
+          },
+          "kn" : {
+            "type" : "string"
+          },
+          "ko" : {
+            "type" : "string"
+          },
+          "ko-kp" : {
+            "type" : "string"
+          },
+          "krc" : {
+            "type" : "string"
+          },
+          "ks" : {
+            "type" : "string"
+          },
+          "ksh" : {
+            "type" : "string"
+          },
+          "ku" : {
+            "type" : "string"
+          },
+          "ku-latn" : {
+            "type" : "string"
+          },
+          "kw" : {
+            "type" : "string"
+          },
+          "ky" : {
+            "type" : "string"
+          },
+          "la" : {
+            "type" : "string"
+          },
+          "lad" : {
+            "type" : "string"
+          },
+          "lb" : {
+            "type" : "string"
+          },
+          "lfn" : {
+            "type" : "string"
+          },
+          "li" : {
+            "type" : "string"
+          },
+          "lij" : {
+            "type" : "string"
+          },
+          "lld" : {
+            "type" : "string"
+          },
+          "lmo" : {
+            "type" : "string"
+          },
+          "lo" : {
+            "type" : "string"
+          },
+          "lt" : {
+            "type" : "string"
+          },
+          "lv" : {
+            "type" : "string"
+          },
+          "lzh" : {
+            "type" : "string"
+          },
+          "mai" : {
+            "type" : "string"
+          },
+          "mg" : {
+            "type" : "string"
+          },
+          "min" : {
+            "type" : "string"
+          },
+          "mk" : {
+            "type" : "string"
+          },
+          "ml" : {
+            "type" : "string"
+          },
+          "mn" : {
+            "type" : "string"
+          },
+          "mni" : {
+            "type" : "string"
+          },
+          "mr" : {
+            "type" : "string"
+          },
+          "ms" : {
+            "type" : "string"
+          },
+          "ms-arab" : {
+            "type" : "string"
+          },
+          "mt" : {
+            "type" : "string"
+          },
+          "mwl" : {
+            "type" : "string"
+          },
+          "my" : {
+            "type" : "string"
+          },
+          "mzn" : {
+            "type" : "string"
+          },
+          "nah" : {
+            "type" : "string"
+          },
+          "nan" : {
+            "type" : "string"
+          },
+          "nap" : {
+            "type" : "string"
+          },
+          "nb" : {
+            "type" : "string"
+          },
+          "nds" : {
+            "type" : "string"
+          },
+          "nds-nl" : {
+            "type" : "string"
+          },
+          "ne" : {
+            "type" : "string"
+          },
+          "new" : {
+            "type" : "string"
+          },
+          "nia" : {
+            "type" : "string"
+          },
+          "nl" : {
+            "type" : "string"
+          },
+          "nn" : {
+            "type" : "string"
+          },
+          "nov" : {
+            "type" : "string"
+          },
+          "nqo" : {
+            "type" : "string"
+          },
+          "nrm" : {
+            "type" : "string"
+          },
+          "oc" : {
+            "type" : "string"
+          },
+          "or" : {
+            "type" : "string"
+          },
+          "os" : {
+            "type" : "string"
+          },
+          "pa" : {
+            "type" : "string"
+          },
+          "pam" : {
+            "type" : "string"
+          },
+          "pap" : {
+            "type" : "string"
+          },
+          "pcd" : {
+            "type" : "string"
+          },
+          "pdc" : {
+            "type" : "string"
+          },
+          "pih" : {
+            "type" : "string"
+          },
+          "pl" : {
+            "type" : "string"
+          },
+          "pms" : {
+            "type" : "string"
+          },
+          "pnb" : {
+            "type" : "string"
+          },
+          "ps" : {
+            "type" : "string"
+          },
+          "pt" : {
+            "type" : "string"
+          },
+          "pt-br" : {
+            "type" : "string"
+          },
+          "qu" : {
+            "type" : "string"
+          },
+          "rm" : {
+            "type" : "string"
+          },
+          "ro" : {
+            "type" : "string"
+          },
+          "ru" : {
+            "type" : "string"
+          },
+          "rue" : {
+            "type" : "string"
+          },
+          "rw" : {
+            "type" : "string"
+          },
+          "sa" : {
+            "type" : "string"
+          },
+          "sah" : {
+            "type" : "string"
+          },
+          "sat" : {
+            "type" : "string"
+          },
+          "sc" : {
+            "type" : "string"
+          },
+          "scn" : {
+            "type" : "string"
+          },
+          "sco" : {
+            "type" : "string"
+          },
+          "sd" : {
+            "type" : "string"
+          },
+          "se" : {
+            "type" : "string"
+          },
+          "sgs" : {
+            "type" : "string"
+          },
+          "sh" : {
+            "type" : "string"
+          },
+          "shi" : {
+            "type" : "string"
+          },
+          "si" : {
+            "type" : "string"
+          },
+          "sk" : {
+            "type" : "string"
+          },
+          "sl" : {
+            "type" : "string"
+          },
+          "smn" : {
+            "type" : "string"
+          },
+          "sms" : {
+            "type" : "string"
+          },
+          "so" : {
+            "type" : "string"
+          },
+          "sq" : {
+            "type" : "string"
+          },
+          "sr" : {
+            "type" : "string"
+          },
+          "sr-ec" : {
+            "type" : "string"
+          },
+          "sr-el" : {
+            "type" : "string"
+          },
+          "stq" : {
+            "type" : "string"
+          },
+          "su" : {
+            "type" : "string"
+          },
+          "sv" : {
+            "type" : "string"
+          },
+          "sw" : {
+            "type" : "string"
+          },
+          "syl" : {
+            "type" : "string"
+          },
+          "szl" : {
+            "type" : "string"
+          },
+          "ta" : {
+            "type" : "string"
+          },
+          "te" : {
+            "type" : "string"
+          },
+          "tg" : {
+            "type" : "string"
+          },
+          "tg-latn" : {
+            "type" : "string"
+          },
+          "th" : {
+            "type" : "string"
+          },
+          "ti" : {
+            "type" : "string"
+          },
+          "tk" : {
+            "type" : "string"
+          },
+          "tl" : {
+            "type" : "string"
+          },
+          "tr" : {
+            "type" : "string"
+          },
+          "ts" : {
+            "type" : "string"
+          },
+          "tt" : {
+            "type" : "string"
+          },
+          "tt-cyrl" : {
+            "type" : "string"
+          },
+          "tw" : {
+            "type" : "string"
+          },
+          "ug" : {
+            "type" : "string"
+          },
+          "uk" : {
+            "type" : "string"
+          },
+          "ur" : {
+            "type" : "string"
+          },
+          "uz" : {
+            "type" : "string"
+          },
+          "vec" : {
+            "type" : "string"
+          },
+          "vi" : {
+            "type" : "string"
+          },
+          "vls" : {
+            "type" : "string"
+          },
+          "vo" : {
+            "type" : "string"
+          },
+          "vro" : {
+            "type" : "string"
+          },
+          "wa" : {
+            "type" : "string"
+          },
+          "war" : {
+            "type" : "string"
+          },
+          "wo" : {
+            "type" : "string"
+          },
+          "wuu" : {
+            "type" : "string"
+          },
+          "xmf" : {
+            "type" : "string"
+          },
+          "yi" : {
+            "type" : "string"
+          },
+          "yo" : {
+            "type" : "string"
+          },
+          "yue" : {
+            "type" : "string"
+          },
+          "za" : {
+            "type" : "string"
+          },
+          "zh" : {
+            "type" : "string"
+          },
+          "zh-cn" : {
+            "type" : "string"
+          },
+          "zh-hans" : {
+            "type" : "string"
+          },
+          "zh-hant" : {
+            "type" : "string"
+          },
+          "zh-hk" : {
+            "type" : "string"
+          },
+          "zh-mo" : {
+            "type" : "string"
+          },
+          "zh-my" : {
+            "type" : "string"
+          },
+          "zh-sg" : {
+            "type" : "string"
+          },
+          "zh-tw" : {
+            "type" : "string"
+          },
+          "zu" : {
+            "type" : "string"
+          }
         },
         "required" : [ "en" ]
       },
       "location" : {
         "additionalProperties" : false,
         "properties" : {
-          "is_accepted" : { },
-          "is_oa" : { },
-          "is_published" : { },
-          "landing_page_url" : { },
-          "license" : { },
-          "pdf_url" : { },
+          "is_accepted" : {
+            "type" : "boolean"
+          },
+          "is_oa" : {
+            "type" : "boolean"
+          },
+          "is_published" : {
+            "type" : "boolean"
+          },
+          "landing_page_url" : {
+            "type" : "string"
+          },
+          "license" : {
+            "type" : "string"
+          },
+          "pdf_url" : {
+            "type" : "string"
+          },
           "source" : {
             "$ref" : "#/components/schemas/location_source"
           },
-          "version" : { }
+          "version" : {
+            "type" : "string"
+          }
         }
       },
       "mailToSchema" : {
-        "pattern" : ".*mailto:w+@[a-zA-Z_]+?.[a-zA-Z]{2,4}.*"
+        "pattern" : ".*mailto:w+@[a-zA-Z_]+?.[a-zA-Z]{2,4}.*",
+        "type" : "string"
       },
       "meta" : {
         "properties" : {
-          "count" : { },
-          "db_response_time_ms" : { },
-          "groups_count" : { },
-          "page" : { },
-          "per_page" : { }
+          "count" : {
+            "type" : "integer"
+          },
+          "db_response_time_ms" : {
+            "type" : "integer"
+          },
+          "groups_count" : {
+            "type" : "string"
+          },
+          "page" : {
+            "type" : "integer"
+          },
+          "per_page" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "count", "db_response_time_ms", "groups_count", "page", "per_page" ]
       },
       "ngram" : {
         "items" : {
-          "properties" : {
-            "ngram" : { },
-            "ngram_count" : { },
-            "ngram_tokens" : { },
-            "term_frequency" : { }
-          },
-          "required" : [ "ngram", "ngram_count", "ngram_tokens", "term_frequency" ]
-        }
+          "$ref" : "#/components/schemas/ngram_inner"
+        },
+        "type" : "array"
       },
       "ngramMeta" : {
         "properties" : {
-          "count" : { },
-          "doi" : { },
-          "openalex_id" : { }
+          "count" : {
+            "type" : "integer"
+          },
+          "doi" : {
+            "type" : "string"
+          },
+          "openalex_id" : {
+            "type" : "string"
+          }
         },
         "required" : [ "count", "openalex_id" ]
       },
@@ -3416,9 +4264,15 @@
       },
       "person" : {
         "properties" : {
-          "display_name" : { },
-          "id" : { },
-          "orcid" : { }
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "orcid" : {
+            "type" : "string"
+          }
         },
         "required" : [ "display_name", "id", "orcid" ]
       },
@@ -3426,27 +4280,52 @@
         "additionalProperties" : false,
         "properties" : {
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "cited_by_count" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "country_codes" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "hierarchy_level" : { },
-          "homepage_url" : { },
-          "id" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "hierarchy_level" : {
+            "type" : "integer"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
           "lineage" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "parent_publisher" : {
             "$ref" : "#/components/schemas/publisher_parent_publisher"
@@ -3454,12 +4333,18 @@
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
-          "sources_api_url" : { },
+          "sources_api_url" : {
+            "type" : "string"
+          },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "display_name", "id" ]
       },
@@ -3467,27 +4352,52 @@
         "additionalProperties" : false,
         "properties" : {
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "cited_by_count" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "country_codes" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "hierarchy_level" : { },
-          "homepage_url" : { },
-          "id" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "hierarchy_level" : {
+            "type" : "integer"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "image_thumbnail_url" : { },
-          "image_url" : { },
+          "image_thumbnail_url" : {
+            "type" : "string"
+          },
+          "image_url" : {
+            "type" : "string"
+          },
           "lineage" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "parent_publisher" : {
             "$ref" : "#/components/schemas/publisher_parent_publisher"
@@ -3495,12 +4405,18 @@
           "roles" : {
             "$ref" : "#/components/schemas/roles"
           },
-          "sources_api_url" : { },
+          "sources_api_url" : {
+            "type" : "string"
+          },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "updated_date" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "display_name", "id" ]
       },
@@ -3515,97 +4431,145 @@
           "results" : {
             "items" : {
               "$ref" : "#/components/schemas/publisherSchema"
-            }
+            },
+            "type" : "array"
           }
         },
         "required" : [ "group_by", "meta", "results" ]
       },
       "repositoriesArray" : {
         "items" : {
-          "properties" : {
-            "display_name" : { },
-            "host_organization" : { },
-            "host_organization_lineage" : {
-              "items" : { }
-            },
-            "host_organization_name" : { },
-            "id" : { }
-          },
-          "required" : [ "display_name", "host_organization", "host_organization_lineage", "host_organization_name", "id" ]
-        }
+          "$ref" : "#/components/schemas/repositoriesArray_inner"
+        },
+        "type" : "array"
       },
-      "resp4xxResponseSchema" : { },
+      "resp4xxResponseSchema" : {
+        "type" : "string"
+      },
       "role" : {
         "additionalProperties" : false,
         "properties" : {
-          "id" : { },
-          "role" : { },
-          "works_count" : { }
+          "id" : {
+            "type" : "string"
+          },
+          "role" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "id", "role", "works_count" ]
       },
       "roles" : {
-        "additionalProperties" : false,
         "items" : {
           "$ref" : "#/components/schemas/role"
-        }
+        },
+        "type" : "array"
       },
       "rootResponseSchema" : {
         "properties" : {
-          "documentation_url" : { },
-          "msg" : { },
-          "version" : { }
+          "documentation_url" : {
+            "type" : "string"
+          },
+          "msg" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string"
+          }
         },
         "required" : [ "documentation_url", "msg", "version" ]
       },
       "source" : {
         "properties" : {
-          "abbreviated_title" : { },
+          "abbreviated_title" : {
+            "type" : "string"
+          },
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "apc_prices" : {
             "$ref" : "#/components/schemas/apc_prices"
           },
-          "apc_usd" : { },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "apc_usd" : {
+            "type" : "number"
+          },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "homepage_url" : { },
-          "host_organization" : { },
-          "host_organization_lineage" : {
-            "items" : { }
+          "created_date" : {
+            "type" : "string"
           },
-          "host_organization_name" : { },
-          "id" : { },
+          "display_name" : {
+            "type" : "string"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "host_organization" : {
+            "type" : "string"
+          },
+          "host_organization_lineage" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "host_organization_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "is_in_doaj" : { },
-          "is_oa" : { },
-          "issn" : {
-            "items" : { }
+          "is_in_doaj" : {
+            "type" : "boolean"
           },
-          "issn_l" : { },
+          "is_oa" : {
+            "type" : "boolean"
+          },
+          "issn" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "issn_l" : {
+            "type" : "string"
+          },
           "societies" : {
             "items" : {
-              "properties" : {
-                "organization" : { },
-                "url" : { }
-              }
-            }
+              "$ref" : "#/components/schemas/source_societies_inner"
+            },
+            "type" : "array"
           },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "type" : { },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { },
+          "type" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
           "x_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           }
@@ -3614,52 +4578,93 @@
       },
       "sourceSchema" : {
         "properties" : {
-          "abbreviated_title" : { },
+          "abbreviated_title" : {
+            "type" : "string"
+          },
           "alternate_titles" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "apc_prices" : {
             "$ref" : "#/components/schemas/apc_prices"
           },
-          "apc_usd" : { },
-          "cited_by_count" : { },
-          "country_code" : { },
+          "apc_usd" : {
+            "type" : "number"
+          },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "country_code" : {
+            "type" : "string"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "homepage_url" : { },
-          "host_organization" : { },
-          "host_organization_lineage" : {
-            "items" : { }
+          "created_date" : {
+            "type" : "string"
           },
-          "host_organization_name" : { },
-          "id" : { },
+          "display_name" : {
+            "type" : "string"
+          },
+          "homepage_url" : {
+            "type" : "string"
+          },
+          "host_organization" : {
+            "type" : "string"
+          },
+          "host_organization_lineage" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "host_organization_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "is_in_doaj" : { },
-          "is_oa" : { },
-          "issn" : {
-            "items" : { }
+          "is_in_doaj" : {
+            "type" : "boolean"
           },
-          "issn_l" : { },
+          "is_oa" : {
+            "type" : "boolean"
+          },
+          "issn" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "issn_l" : {
+            "type" : "string"
+          },
           "societies" : {
             "items" : {
-              "properties" : {
-                "organization" : { },
-                "url" : { }
-              }
-            }
+              "$ref" : "#/components/schemas/source_societies_inner"
+            },
+            "type" : "array"
           },
           "summary_stats" : {
             "$ref" : "#/components/schemas/summary_stats"
           },
-          "type" : { },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { },
+          "type" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
           "x_concepts" : {
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           }
@@ -3677,18 +4682,30 @@
           "results" : {
             "items" : {
               "$ref" : "#/components/schemas/sourceSchema"
-            }
+            },
+            "type" : "array"
           }
         }
       },
       "subfield" : {
         "properties" : {
-          "cited_by_count" : { },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "display_name_alternatives" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "domain" : {
             "$ref" : "#/components/schemas/topicLevelSchema"
@@ -3696,7 +4713,9 @@
           "field" : {
             "$ref" : "#/components/schemas/topicLevelSchema"
           },
-          "id" : { },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
@@ -3705,46 +4724,68 @@
           },
           "topics" : {
             "items" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : { }
-              },
-              "required" : [ "display_name", "id" ]
-            }
+              "$ref" : "#/components/schemas/subfield_topics_inner"
+            },
+            "type" : "array"
           },
-          "updated_date" : { },
-          "works_api_url" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_api_url" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "cited_by_count", "created_date", "description", "display_name", "display_name_alternatives", "domain", "field", "id", "ids", "siblings", "topics", "updated_date", "works_api_url", "works_count" ]
       },
       "summary_stats" : {
         "additionalProperties" : false,
         "properties" : {
-          "2yr_mean_citedness" : { },
-          "h_index" : { },
-          "i10_index" : { }
+          "2yr_mean_citedness" : {
+            "type" : "number"
+          },
+          "h_index" : {
+            "type" : "integer"
+          },
+          "i10_index" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "2yr_mean_citedness", "h_index", "i10_index" ]
       },
       "topic" : {
         "properties" : {
-          "cited_by_count" : { },
-          "created_date" : { },
-          "description" : { },
-          "display_name" : { },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
           "domain" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
           "field" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
-          "id" : { },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
           "keywords" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "siblings" : {
             "$ref" : "#/components/schemas/topicLevelSchema"
@@ -3752,8 +4793,12 @@
           "subfield" : {
             "$ref" : "#/components/schemas/topicLevelArraySchema"
           },
-          "updated_date" : { },
-          "works_count" : { }
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "cited_by_count", "created_date", "description", "display_name", "domain", "field", "id", "ids", "keywords", "siblings", "subfield", "updated_date", "works_count" ]
       },
@@ -3762,13 +4807,16 @@
           "siblings" : {
             "items" : {
               "$ref" : "#/components/schemas/topicLevelSchema"
-            }
+            },
+            "type" : "array"
           }
         }
       },
       "topicLevelSchema" : {
         "properties" : {
-          "display_name" : { },
+          "display_name" : {
+            "type" : "string"
+          },
           "id" : {
             "$ref" : "#/components/schemas/topicLevelSchema_id"
           }
@@ -3779,56 +4827,27 @@
         "properties" : {
           "group_by" : {
             "items" : {
-              "properties" : {
-                "count" : { },
-                "key" : { },
-                "key_display_name" : { }
-              },
-              "required" : [ "count", "key", "key_display_name" ]
-            }
+              "$ref" : "#/components/schemas/group_by_result_inner"
+            },
+            "type" : "array"
           },
           "meta" : {
             "$ref" : "#/components/schemas/topics_meta"
           },
           "results" : {
             "items" : {
-              "properties" : {
-                "cited_by_count" : { },
-                "created_date" : { },
-                "description" : { },
-                "display_name" : { },
-                "domain" : {
-                  "$ref" : "#/components/schemas/topicLevelSchema"
-                },
-                "field" : {
-                  "$ref" : "#/components/schemas/topicLevelSchema"
-                },
-                "id" : { },
-                "ids" : {
-                  "$ref" : "#/components/schemas/ids"
-                },
-                "keywords" : {
-                  "items" : { }
-                },
-                "relevance_score" : { },
-                "siblings" : {
-                  "$ref" : "#/components/schemas/topicLevelArraySchema"
-                },
-                "subfield" : {
-                  "$ref" : "#/components/schemas/topicLevelSchema"
-                },
-                "updated_date" : { },
-                "works_count" : { }
-              },
-              "required" : [ "description", "display_name", "id" ]
-            }
+              "$ref" : "#/components/schemas/topics_results_inner"
+            },
+            "type" : "array"
           }
         },
         "required" : [ "group_by", "meta" ]
       },
       "work" : {
         "properties" : {
-          "abstract_inverted_index" : { },
+          "abstract_inverted_index" : {
+            "type" : "object"
+          },
           "apc_list" : {
             "$ref" : "#/components/schemas/apc"
           },
@@ -3844,8 +4863,12 @@
           "biblio" : {
             "$ref" : "#/components/schemas/work_biblio"
           },
-          "cited_by_api_url" : { },
-          "cited_by_count" : { },
+          "cited_by_api_url" : {
+            "type" : "string"
+          },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "cited_by_percentile_year" : {
             "$ref" : "#/components/schemas/work_cited_by_percentile_year"
           },
@@ -3853,109 +4876,144 @@
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           },
           "corresponding_author_ids" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "corresponding_institution_ids" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "countries_distinct_count" : { },
+          "countries_distinct_count" : {
+            "type" : "integer"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "doi" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "doi" : {
+            "type" : "string"
+          },
           "grants" : {
             "items" : {
-              "properties" : {
-                "award_id" : { },
-                "funder" : { },
-                "funder_display_name" : { }
-              },
-              "required" : [ "award_id", "funder", "funder_display_name" ]
-            }
+              "$ref" : "#/components/schemas/work_grants_inner"
+            },
+            "type" : "array"
           },
-          "has_fulltext" : { },
-          "id" : { },
+          "has_fulltext" : {
+            "type" : "boolean"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "institutions_distinct_count" : { },
-          "is_paratext" : { },
-          "is_retracted" : { },
+          "institutions_distinct_count" : {
+            "type" : "integer"
+          },
+          "is_paratext" : {
+            "type" : "boolean"
+          },
+          "is_retracted" : {
+            "type" : "boolean"
+          },
           "keywords" : {
             "items" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : {
-                  "format" : "url"
-                },
-                "score" : { }
-              },
-              "required" : [ "display_name", "id", "score" ]
-            }
+              "$ref" : "#/components/schemas/work_keywords_inner"
+            },
+            "type" : "array"
           },
-          "language" : { },
+          "language" : {
+            "type" : "string"
+          },
           "locations" : {
             "items" : {
               "$ref" : "#/components/schemas/location"
-            }
+            },
+            "type" : "array"
           },
-          "locations_count" : { },
+          "locations_count" : {
+            "type" : "integer"
+          },
           "mesh" : {
             "items" : {
-              "properties" : {
-                "descriptor_name" : { },
-                "descriptor_ui" : { },
-                "is_major_topic" : { },
-                "qualifier_name" : { },
-                "qualifier_ui" : { }
-              },
-              "required" : [ "descriptor_name", "descriptor_ui", "is_major_topic", "qualifier_name", "qualifier_ui" ]
-            }
+              "$ref" : "#/components/schemas/work_mesh_inner"
+            },
+            "type" : "array"
           },
-          "ngrams_url" : { },
+          "ngrams_url" : {
+            "type" : "string"
+          },
           "open_access" : {
             "$ref" : "#/components/schemas/work_open_access"
           },
           "primary_location" : {
             "$ref" : "#/components/schemas/location"
           },
-          "publication_date" : { },
-          "publication_year" : { },
-          "referenced_works" : {
-            "items" : { }
+          "publication_date" : {
+            "type" : "string"
           },
-          "referenced_works_count" : { },
+          "publication_year" : {
+            "type" : "integer"
+          },
+          "referenced_works" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "referenced_works_count" : {
+            "type" : "integer"
+          },
           "related_works" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "sustainable_development_goals" : {
             "items" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : { },
-                "score" : { }
-              },
-              "required" : [ "display_name", "id", "score" ]
-            }
+              "$ref" : "#/components/schemas/work_sustainable_development_goals_inner"
+            },
+            "type" : "array"
           },
-          "title" : { },
-          "type" : { },
-          "type_crossref" : { },
-          "updated_date" : { }
+          "title" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "type_crossref" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          }
         },
         "required" : [ "display_name", "id" ]
       },
       "workAttributes" : {
-        "enum" : [ "abstract_inverted_index", "apc_list", "apc_paid", "authorships", "best_oa_location", "biblio", "cited_by_api_url", "cited_by_count", "cited_by_percentile_year", "concepts", "corresponding_author_ids", "corresponding_institution_ids", "countries_distinct_count", "counts_by_year", "created_date", "doi", "fulltext_origin", "grants", "has_fulltext", "ids", "institutions_distinct_count", "is_authors_truncated", "is_paratext", "is_retracted", "keywords", "language", "locations_count", "locations", "mesh", "ngrams_url", "open_access", "primary_location", "publication_date", "publication_year", "referenced_works_count", "referenced_works", "related_works", "relevance_score", "sustainable_development_goals", "title", "type_crossref", "type", "updated_date" ]
+        "enum" : [ "abstract_inverted_index", "apc_list", "apc_paid", "authorships", "best_oa_location", "biblio", "cited_by_api_url", "cited_by_count", "cited_by_percentile_year", "concepts", "corresponding_author_ids", "corresponding_institution_ids", "countries_distinct_count", "counts_by_year", "created_date", "doi", "fulltext_origin", "grants", "has_fulltext", "ids", "institutions_distinct_count", "is_authors_truncated", "is_paratext", "is_retracted", "keywords", "language", "locations_count", "locations", "mesh", "ngrams_url", "open_access", "primary_location", "publication_date", "publication_year", "referenced_works_count", "referenced_works", "related_works", "relevance_score", "sustainable_development_goals", "title", "type_crossref", "type", "updated_date" ],
+        "type" : "string"
       },
       "workIdPattern" : {
-        "pattern" : "(^W[0-9]+$)|(^https:\\/\\/openalex.org\\/W[0-9]+$)|(^mag:\\d+$)|(^https:\\/\\/doi.org\\/10.\\d{4,9}\\/[-._;()\\/:a-zA-Z0-9]+$)|(^pmid:\\d+$)|(^pmcid:(PMC)?\\d+$)"
+        "pattern" : "(^W[0-9]+$)|(^https:\\/\\/openalex.org\\/W[0-9]+$)|(^mag:\\d+$)|(^https:\\/\\/doi.org\\/10.\\d{4,9}\\/[-._;()\\/:a-zA-Z0-9]+$)|(^pmid:\\d+$)|(^pmcid:(PMC)?\\d+$)",
+        "type" : "string"
       },
       "workSchema" : {
         "properties" : {
-          "abstract_inverted_index" : { },
+          "abstract_inverted_index" : {
+            "type" : "object"
+          },
           "apc_list" : {
             "$ref" : "#/components/schemas/apc"
           },
@@ -3971,8 +5029,12 @@
           "biblio" : {
             "$ref" : "#/components/schemas/work_biblio"
           },
-          "cited_by_api_url" : { },
-          "cited_by_count" : { },
+          "cited_by_api_url" : {
+            "type" : "string"
+          },
+          "cited_by_count" : {
+            "type" : "integer"
+          },
           "cited_by_percentile_year" : {
             "$ref" : "#/components/schemas/work_cited_by_percentile_year"
           },
@@ -3980,113 +5042,136 @@
             "$ref" : "#/components/schemas/dehydratedConceptArray"
           },
           "corresponding_author_ids" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "corresponding_institution_ids" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "countries_distinct_count" : { },
+          "countries_distinct_count" : {
+            "type" : "integer"
+          },
           "counts_by_year" : {
             "$ref" : "#/components/schemas/countsByYear"
           },
-          "created_date" : { },
-          "display_name" : { },
-          "doi" : { },
+          "created_date" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "doi" : {
+            "type" : "string"
+          },
           "grants" : {
             "items" : {
-              "properties" : {
-                "award_id" : { },
-                "funder" : { },
-                "funder_display_name" : { }
-              },
-              "required" : [ "award_id", "funder", "funder_display_name" ]
-            }
+              "$ref" : "#/components/schemas/work_grants_inner"
+            },
+            "type" : "array"
           },
-          "has_fulltext" : { },
-          "id" : { },
+          "has_fulltext" : {
+            "type" : "boolean"
+          },
+          "id" : {
+            "type" : "string"
+          },
           "ids" : {
             "$ref" : "#/components/schemas/ids"
           },
-          "institutions_distinct_count" : { },
-          "is_paratext" : { },
-          "is_retracted" : { },
+          "institutions_distinct_count" : {
+            "type" : "integer"
+          },
+          "is_paratext" : {
+            "type" : "boolean"
+          },
+          "is_retracted" : {
+            "type" : "boolean"
+          },
           "keywords" : {
             "items" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : {
-                  "format" : "url"
-                },
-                "score" : { }
-              },
-              "required" : [ "display_name", "id", "score" ]
-            }
+              "$ref" : "#/components/schemas/work_keywords_inner"
+            },
+            "type" : "array"
           },
-          "language" : { },
+          "language" : {
+            "type" : "string"
+          },
           "locations" : {
             "items" : {
               "$ref" : "#/components/schemas/location"
-            }
+            },
+            "type" : "array"
           },
-          "locations_count" : { },
+          "locations_count" : {
+            "type" : "integer"
+          },
           "mesh" : {
             "items" : {
-              "properties" : {
-                "descriptor_name" : { },
-                "descriptor_ui" : { },
-                "is_major_topic" : { },
-                "qualifier_name" : { },
-                "qualifier_ui" : { }
-              },
-              "required" : [ "descriptor_name", "descriptor_ui", "is_major_topic", "qualifier_name", "qualifier_ui" ]
-            }
+              "$ref" : "#/components/schemas/work_mesh_inner"
+            },
+            "type" : "array"
           },
-          "ngrams_url" : { },
+          "ngrams_url" : {
+            "type" : "string"
+          },
           "open_access" : {
             "$ref" : "#/components/schemas/work_open_access"
           },
           "primary_location" : {
             "$ref" : "#/components/schemas/location"
           },
-          "publication_date" : { },
-          "publication_year" : { },
-          "referenced_works" : {
-            "items" : { }
+          "publication_date" : {
+            "type" : "string"
           },
-          "referenced_works_count" : { },
+          "publication_year" : {
+            "type" : "integer"
+          },
+          "referenced_works" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "referenced_works_count" : {
+            "type" : "integer"
+          },
           "related_works" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "sustainable_development_goals" : {
             "items" : {
-              "properties" : {
-                "display_name" : { },
-                "id" : { },
-                "score" : { }
-              },
-              "required" : [ "display_name", "id", "score" ]
-            }
+              "$ref" : "#/components/schemas/work_sustainable_development_goals_inner"
+            },
+            "type" : "array"
           },
-          "title" : { },
-          "type" : { },
-          "type_crossref" : { },
-          "updated_date" : { }
+          "title" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "type_crossref" : {
+            "type" : "string"
+          },
+          "updated_date" : {
+            "type" : "string"
+          }
         },
         "required" : [ "display_name", "id" ]
-      },
-      "workSelectSchema" : {
-        "items" : {
-          "allOf" : [ {
-            "$ref" : "#/components/schemas/workAttributes"
-          }, {
-            "$ref" : "#/components/schemas/baseSelectionAttributes"
-          } ]
-        }
       },
       "worksArray" : {
         "items" : {
           "$ref" : "#/components/schemas/workSchema"
-        }
+        },
+        "type" : "array"
       },
       "worksResponse" : {
         "additionalProperties" : false,
@@ -4103,85 +5188,463 @@
         },
         "required" : [ "meta", "results" ]
       },
+      "affiliations_inner" : {
+        "properties" : {
+          "institution" : {
+            "$ref" : "#/components/schemas/dehydratedInstitution"
+          },
+          "years" : {
+            "items" : {
+              "type" : "integer"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "institution", "years" ]
+      },
+      "apc_prices_inner" : {
+        "additionalProperties" : false,
+        "properties" : {
+          "currency" : {
+            "type" : "string"
+          },
+          "price" : {
+            "type" : "number"
+          }
+        },
+        "required" : [ "currency", "price" ]
+      },
+      "authorships_inner_author" : {
+        "properties" : {
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "orcid" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "display_name", "id" ]
+      },
+      "authorships_inner_institutions_inner" : {
+        "properties" : {
+          "country_code" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "lineage" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "ror" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "country_code", "display_name", "id", "lineage", "ror", "type" ]
+      },
+      "authorships_inner" : {
+        "properties" : {
+          "author" : {
+            "$ref" : "#/components/schemas/authorships_inner_author"
+          },
+          "author_position" : {
+            "type" : "string"
+          },
+          "countries" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "institutions" : {
+            "items" : {
+              "$ref" : "#/components/schemas/authorships_inner_institutions_inner"
+            },
+            "type" : "array"
+          },
+          "is_corresponding" : {
+            "type" : "boolean"
+          },
+          "raw_affiliation_string" : {
+            "type" : "string"
+          },
+          "raw_affiliation_strings" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "raw_author_name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "author", "author_position", "countries", "institutions", "is_corresponding", "raw_affiliation_strings", "raw_author_name" ]
+      },
       "concept_ids" : {
         "properties" : {
-          "mag" : { },
-          "openalex" : { },
-          "umls_cui" : {
-            "items" : { }
+          "mag" : {
+            "type" : "string"
           },
-          "wikidata" : { },
-          "wikipedia" : { }
+          "openalex" : {
+            "type" : "string"
+          },
+          "umls_cui" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "wikidata" : {
+            "type" : "string"
+          },
+          "wikipedia" : {
+            "type" : "string"
+          }
         },
         "required" : [ "openalex" ]
       },
+      "countsByYear_inner" : {
+        "properties" : {
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "works_count" : {
+            "type" : "integer"
+          },
+          "year" : {
+            "type" : "integer"
+          }
+        },
+        "required" : [ "cited_by_count", "year" ]
+      },
+      "group_by_result_inner" : {
+        "properties" : {
+          "count" : {
+            "type" : "integer"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "key_display_name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "count", "key", "key_display_name" ]
+      },
       "location_source" : {
         "properties" : {
-          "display_name" : { },
-          "host_organization" : { },
+          "display_name" : {
+            "type" : "string"
+          },
+          "host_organization" : {
+            "type" : "string"
+          },
           "host_organization_lineage" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
           "host_organization_lineage_names" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "host_organization_name" : { },
-          "id" : { },
-          "is_in_doaj" : { },
-          "is_oa" : { },
+          "host_organization_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "is_in_doaj" : {
+            "type" : "boolean"
+          },
+          "is_oa" : {
+            "type" : "boolean"
+          },
           "issn" : {
-            "items" : { }
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
           },
-          "issn_l" : { },
-          "type" : { }
+          "issn_l" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
         }
+      },
+      "ngram_inner" : {
+        "properties" : {
+          "ngram" : {
+            "type" : "string"
+          },
+          "ngram_count" : {
+            "type" : "integer"
+          },
+          "ngram_tokens" : {
+            "type" : "integer"
+          },
+          "term_frequency" : {
+            "type" : "number"
+          }
+        },
+        "required" : [ "ngram", "ngram_count", "ngram_tokens", "term_frequency" ]
       },
       "publisher_parent_publisher" : {
         "properties" : {
-          "display_name" : { },
-          "id" : { }
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          }
         }
+      },
+      "repositoriesArray_inner" : {
+        "properties" : {
+          "display_name" : {
+            "type" : "string"
+          },
+          "host_organization" : {
+            "type" : "string"
+          },
+          "host_organization_lineage" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "host_organization_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "display_name", "host_organization", "host_organization_lineage", "host_organization_name", "id" ]
+      },
+      "source_societies_inner" : {
+        "properties" : {
+          "organization" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          }
+        }
+      },
+      "subfield_topics_inner" : {
+        "properties" : {
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "display_name", "id" ]
       },
       "topicLevelSchema_id" : {
         "anyOf" : [ {
-          "pattern" : "^[0-9]+$"
+          "pattern" : "^[0-9]+$",
+          "type" : "string"
         }, {
-          "pattern" : "^T[0-9]+$"
+          "pattern" : "^T[0-9]+$",
+          "type" : "integer"
         } ]
       },
       "topics_meta" : {
         "properties" : {
-          "count" : { },
-          "db_response_time_ms" : { },
-          "groups_count" : { },
-          "page" : { },
-          "per_page" : { }
+          "count" : {
+            "type" : "integer"
+          },
+          "db_response_time_ms" : {
+            "type" : "integer"
+          },
+          "groups_count" : {
+            "type" : "integer"
+          },
+          "page" : {
+            "type" : "integer"
+          },
+          "per_page" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "count", "db_response_time_ms", "groups_count", "page", "per_page" ]
       },
+      "topics_results_inner" : {
+        "properties" : {
+          "cited_by_count" : {
+            "type" : "integer"
+          },
+          "created_date" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "domain" : {
+            "$ref" : "#/components/schemas/topicLevelSchema"
+          },
+          "field" : {
+            "$ref" : "#/components/schemas/topicLevelSchema"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "ids" : {
+            "$ref" : "#/components/schemas/ids"
+          },
+          "keywords" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "relevance_score" : {
+            "type" : "number"
+          },
+          "siblings" : {
+            "$ref" : "#/components/schemas/topicLevelArraySchema"
+          },
+          "subfield" : {
+            "$ref" : "#/components/schemas/topicLevelSchema"
+          },
+          "updated_date" : {
+            "type" : "string"
+          },
+          "works_count" : {
+            "type" : "integer"
+          }
+        },
+        "required" : [ "description", "display_name", "id" ]
+      },
       "work_biblio" : {
         "properties" : {
-          "first_page" : { },
-          "issue" : { },
-          "last_page" : { },
-          "volume" : { }
+          "first_page" : {
+            "type" : "string"
+          },
+          "issue" : {
+            "type" : "string"
+          },
+          "last_page" : {
+            "type" : "string"
+          },
+          "volume" : {
+            "type" : "string"
+          }
         }
       },
       "work_cited_by_percentile_year" : {
         "properties" : {
-          "max" : { },
-          "min" : { }
+          "max" : {
+            "type" : "integer"
+          },
+          "min" : {
+            "type" : "integer"
+          }
         },
         "required" : [ "max", "min" ]
       },
+      "work_grants_inner" : {
+        "properties" : {
+          "award_id" : {
+            "type" : "string"
+          },
+          "funder" : {
+            "type" : "string"
+          },
+          "funder_display_name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "award_id", "funder", "funder_display_name" ]
+      },
+      "work_keywords_inner" : {
+        "properties" : {
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "format" : "url",
+            "type" : "string"
+          },
+          "score" : {
+            "type" : "number"
+          }
+        },
+        "required" : [ "display_name", "id", "score" ]
+      },
+      "work_mesh_inner" : {
+        "properties" : {
+          "descriptor_name" : {
+            "type" : "string"
+          },
+          "descriptor_ui" : {
+            "type" : "string"
+          },
+          "is_major_topic" : {
+            "type" : "boolean"
+          },
+          "qualifier_name" : {
+            "type" : "string"
+          },
+          "qualifier_ui" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "descriptor_name", "descriptor_ui", "is_major_topic", "qualifier_name", "qualifier_ui" ]
+      },
       "work_open_access" : {
         "properties" : {
-          "any_repository_has_fulltext" : { },
-          "is_oa" : { },
-          "oa_status" : { },
-          "oa_url" : { }
+          "any_repository_has_fulltext" : {
+            "type" : "boolean"
+          },
+          "is_oa" : {
+            "type" : "boolean"
+          },
+          "oa_status" : {
+            "type" : "string"
+          },
+          "oa_url" : {
+            "type" : "string"
+          }
         },
         "required" : [ "any_repository_has_fulltext", "is_oa", "oa_status", "oa_url" ]
+      },
+      "work_sustainable_development_goals_inner" : {
+        "properties" : {
+          "display_name" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "score" : {
+            "type" : "number"
+          }
+        },
+        "required" : [ "display_name", "id", "score" ]
       }
     }
   }
